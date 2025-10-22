@@ -5,7 +5,7 @@ export const commitment = [
         "para2": "MEP shall sustain Organizational Excellence through visionary leadership and innovative efforts.",
         "about2": "Quality Assurance",
         "para3": "The Company has a Quality Management System which complies with:",
-        "image": "/commitment.png",
+        "image": "/commit.png",
         "points": [
             "All contractual obligations, Client’s Specifications and Industry standards.",
             "All Statutory Regulations and Codes of Practice.",
