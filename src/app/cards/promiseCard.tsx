@@ -9,7 +9,6 @@ interface PromiseCardProps {
   iconName: 'Truck' | 'Clock' | 'Shield' | 'Award' | 'Users' | 'DollarSign'; // Define expected icons
 }
 
-// Function to map icon name string to a component
 const getIconComponent = (name: string) => {
   switch (name) {
     case 'Truck': return Truck;
@@ -33,12 +32,10 @@ const PromiseCard: React.FC<PromiseCardProps> = ({ imageurl, title, description,
         transform transition duration-500 hover:shadow-3xl hover:translate-y-[-8px]
       `}
     >
-      {/* 1. Elevated Icon Section */}
       <div className="p-4 rounded-full bg-green-500 text-white shadow-xl -mt-12 mb-4 ring-4 ring-white">
         <IconComponent className="w-8 h-8" />
       </div>
 
-      {/* 2. Title & Description */}
       <h2 className="text-xl font-bold text-gray-800 mb-3 mt-4">
         {title}
       </h2>
