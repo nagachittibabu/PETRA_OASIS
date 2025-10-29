@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 
-interface CoreValueCardProps {
+interface CoreValueCardProps
+ {
   imageurl: string;
   title: string;
   description: string;
