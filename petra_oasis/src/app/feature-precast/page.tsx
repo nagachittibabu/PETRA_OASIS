@@ -28,7 +28,7 @@ const Precast = () => {
       <div className="   w-[90%] h-[90%]  flex justify-center items-center space-y-10  flex-col  main_section">
         <div className="   w-[90%] h-[200px] text-center precast_building box_shadow">
           <h1 className=" heading text-[30px] xl:text-[50px] lg:text-[46px] md:text-[43px] sm:text-[38px]  font-bold text-blue-800">
-            Precast Buildings System......
+            Precast Buildings System
           </h1>
           <h2 className="services text-[25px] font-medium text-blue-800">
             We are specialists In MEP Precast panel Manufacturing services.
