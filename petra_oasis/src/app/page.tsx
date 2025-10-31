@@ -1,9 +1,9 @@
-import Precast from "./feature-precast/page";
-
+import Commitment from "./commitment/page";
 
 export default function Home() {
-  return (
-   <Precast/>
-
-  );
+    return (
+        <div>
+            <Commitment />
+        </div>
+    );
 }
