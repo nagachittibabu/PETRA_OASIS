@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import Aos from 'aos';
 import { projects } from "../export";
 import Image from "next/image";
-import ProjectCard from "../cards/projectCard";
+import ProjectCard from "../cards/projectsectionCard";
 
 const ProjectSection = () => {
     useEffect(() => {
