@@ -4,6 +4,11 @@
 }
 /* precast_building */
 
+header {
+  background: #002b5c;
+  position: relative;
+  overflow: hidden;
+}
 .precast_building {
   border: white;
   background-color: rgb(227, 225, 221);
