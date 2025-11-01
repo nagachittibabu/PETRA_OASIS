@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Gallery from "../cards/imageGallery";
-import ProjectDetailCard from "../cards/projectDetailsCard";
-import LogoGallery from "../cards/logoGallery";
+import Gallery from "../cards/cards/imageGallery";
+import ProjectDetailCard from "../cards/cards/projectDetailsCard";
+import LogoGallery from "../cards/cards/logoGallery";
 let count = 0;
 const Precast = () => {
   const images = [
