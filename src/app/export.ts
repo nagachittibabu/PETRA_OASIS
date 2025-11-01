@@ -157,3 +157,44 @@ export const corevalues = [
     },
 
 ]
+
+export const projects = [
+    {
+        'image': '/images/commercial-building.png',
+        'banner': '/images/commercialbanner.png',
+        'title': 'Commercial',
+        'about': 'These structures serve various purposes, such as retail stores, office buildings, warehouses, hotels, hospitals, and educational institutions.'
+
+    },
+    {
+        'image': '/images/residential.png',
+        'banner': '/images/companybanner.png',
+        'title': 'Residential',
+        'about': 'Residential construction involves building homes, apartments, and other dwellings. It’s a dynamic industry shaping our living spaces globally.'
+    },
+    {
+        'image': '/images/industrial.png',
+        'banner': '/images/industrailbanner.png',
+        'title': 'Industrial',
+        'about': 'Industrial properties cater to manufacturing, warehousing, and logistics needs Examples: factories, distribution centers, and industrial parks.'
+    },
+    {
+        'image': '/images/educational.png',
+        'banner': '/images/educationalbanner.png',
+        'title': 'Educational',
+        'about': 'Educational properties serve learning institutions. Examples: schools, colleges, and universities.'
+
+    },
+    {
+        'image': '/images/hospital.png',
+        'banner': '/images/hospitalitybannner.png',
+        'title': 'Hospitality',
+        'about': 'Hospitality properties provide lodging, dining, and leisure services. Examples: hotels, restaurants, and resorts.'
+    },
+    {
+        'image': '/images/medical.png',
+        'banner': '/images/hospitalbanner.png',
+        'title': 'Medical',
+        'about': 'Medical properties support healthcare services. Examples: hospitals, clinics, and medical office buildings.'
+    }
+]
