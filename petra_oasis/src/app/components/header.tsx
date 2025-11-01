@@ -48,14 +48,14 @@ useEffect(() => {
            {/*navigation bar */}
         {isNavVisible && (
           <nav className='w-[75%] h-full  flex items-center justify-center text-[15px] font-bold text-gray-200 xl:text-[15px] lg:text-[14px] md:text-[11px] sm:text-[10px]'>
-            <ul className='w-[90%] h-[30px] flex items-center gap-6 xl:gap-10 lg:gap-10 md:gap-6 sm:gap-4  justify-center'>
-              <li><Link href={"/"}>HOME</Link></li>
-              <li><Link href={"/"}>ABOUT US</Link></li>
-              <li><Link href={"/"}>SERVICES</Link></li> 
-              <li><Link href={"/"}>PROJECTS</Link></li>
-              <li><Link href={"/"}> GROUPS</Link></li>
-              <li><Link href={"/"}> MORE </Link></li>
-              <li><Link href={"/"}>CONTACT US</Link></li>
+            <ul className='w-[90%] h-[30px] flex items-center gap-6 xl:gap-10 lg:gap-10 md:gap-6 sm:gap-4  justify-center navbar'>
+              <li style={{ "--delay": '0.2s' } as React.CSSProperties} ><Link href={"/"}>HOME</Link></li>
+              <li style={{ "--delay": '0.4s' } as React.CSSProperties}><Link href={"/"}>ABOUT US</Link></li>
+              <li style={{ "--delay": '0.6s' } as React.CSSProperties}><Link href={"/"}>SERVICES</Link></li> 
+              <li style={{ "--delay": '0.8s' } as React.CSSProperties}><Link href={"/"}>PROJECTS</Link></li>
+              <li style={{ "--delay": '1s' } as React.CSSProperties}><Link href={"/"}> GROUPS</Link></li>
+              <li style={{ "--delay": '1.2s' } as React.CSSProperties}><Link href={"/"}> MORE </Link></li>
+              <li style={{ "--delay": '1.4s' } as React.CSSProperties}><Link href={"/"}>CONTACT US</Link></li>
             </ul>
           </nav>
         ) }

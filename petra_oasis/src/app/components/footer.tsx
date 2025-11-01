@@ -16,15 +16,12 @@ const Footer = () => {
                 className="relative w-[40%] h-full sm:w-[40%] sm:h-[100%] md:w-[40%] md:h-[100%] lg:w-[40%] lg:h-[100%] xl:w-[40%] xl:h-[100%]  overflow-hidden rounded"
               >
                 <Image
-                  src="/images/logo.png"
+                  src="/images/comlogo.png"
                   alt="Company Logo"
                   fill
                   className="object-fill"
                 />
               </Link>
-              <div>
-                <h1 className="w-max h-full font-bold text-[18px] text-green-400 ">WAHAT LIWAN</h1>
-              </div>
             </div>
             <ul className="w-full h-[10%] flex items-center justify-center space-x-4 text-[20px] xl:text-[25px] lg:text-[24px] md:text-[23px] sm:text-[22px]">
               <Link href={""}><li className='bx bxl-instagram' ></li></Link>

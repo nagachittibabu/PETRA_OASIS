@@ -80,3 +80,22 @@ overflow: hidden;
 }
   
 }
+
+
+.navbar li{
+  transition: 2s ;
+  opacity: 0;
+  animation: slide-down 0.3s ease-in forwards;
+  animation-delay:var(--delay)
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
