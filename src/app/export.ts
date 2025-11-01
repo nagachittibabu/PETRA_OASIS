@@ -198,3 +198,173 @@ export const projects = [
         'about': 'Medical properties support healthcare services. Examples: hospitals, clinics, and medical office buildings.'
     }
 ]
+
+export interface Project {
+    image: string;
+    title: string;
+}
+export interface CompanyProjects {
+    company: string;
+    logo:string;
+    projects: Project[];
+}
+
+export const completedProjects: CompanyProjects[] = [
+    {
+        company: "TROJAN CONSTRUCTION GROUP",
+        logo:"/completed-projects/TROJAN CONSTRUCTION GROUP/logo.png",
+        projects: [
+            { image: "/completed-projects/TROJAN CONSTRUCTION GROUP/img 1.png", title: "AL MARYAH VISTA 1&2" },
+            { image: "/completed-projects/TROJAN CONSTRUCTION GROUP/img 2.png", title: "LANDSCAPING (IMPERIAL 3&4)" },
+            { image: "/completed-projects/TROJAN CONSTRUCTION GROUP/img 3.png", title: "COMMUNITY PARK" },
+            { image: "/completed-projects/TROJAN CONSTRUCTION GROUP/img 4.png", title: "DAMAC MERANO TOWER" },
+        ],
+    },
+    {
+        company: "ROYAL RITZ INTERIORS & MEP",
+        logo:"/completed-projects/Royal Ritz INTERIORS & MEP/logo.png",
+        projects: [
+            { image: "/completed-projects/Royal Ritz INTERIORS & MEP/img 1.png", title: "Sheikh Zayed Cricket Stadium" },
+            { image: "/completed-projects/Royal Ritz INTERIORS & MEP/img 2.png", title: "Palm Jumeirah Villa Project" },
+        ],
+    },
+    {
+        company: "MAG INTERNATIONAL ELECTROMECHANICAL WORKS",
+        logo:"/completed-projects/MAG international electromechanical works/logo.png",
+        projects: [
+            { image: "/completed-projects/MAG international electromechanical works/img 1.png", title: "INTERNATIONAL TOWER" },
+            { image: "/completed-projects/MAG international electromechanical works/img 2.png", title: "LAGOON VILLAS" },
+            { image: "/completed-projects/MAG international electromechanical works/img 3.png", title: "DUBAI CREEK" },
+            { image: "/completed-projects/MAG international electromechanical works/img 4.png", title: "SKYCOURTS TOWER" },
+            { image: "/completed-projects/MAG international electromechanical works/img 5.png", title: "LANDMARK VIEWS RESIDENTIAL COMPLEX" },
+        ],
+    },
+    {
+        company: "Gesco Ginco electrical & Sanitary contacting Co. LLC",
+        logo:"/completed-projects/Gesco Ginco electrical & Sanitary contacting Co. LLC/logo.png",
+        projects: [
+            { image: "/completed-projects/Gesco Ginco electrical & Sanitary contacting Co. LLC/img 1.png", title: "Sharjah Oasis Mall" },
+            { image: "/completed-projects/Gesco Ginco electrical & Sanitary contacting Co. LLC/img 2.png", title: "Maryam Island Development" },
+        ],
+    },
+    {
+        company: "Almoayyed Electromechanical Contracting",
+        logo:"/completed-projects/Almoayyed Electromechanical Contracting/logo.png",
+        projects: [
+            { image: "/completed-projects/Almoayyed Electromechanical Contracting/img 1.png", title: "AL Wasal-Qusaia." },
+        ],
+    },
+    {
+        company: "Scale Electro-mechanical Works",
+        logo:"/completed-projects/Scale Electro-mechanical Works/logo.png",
+        projects: [
+            { image: "/completed-projects/Scale Electro-mechanical Works/img 1.png", title: "2B+G+3 Floors+RF+TF On Plat No.2140909,Al Garhoud. Dubai, UAE." },
+            { image: "/completed-projects/Scale Electro-mechanical Works/img 2.png", title: "Jewel of the Creek, Dubai, UAE." },
+            { image: "/completed-projects/Scale Electro-mechanical Works/img 3.png", title: "G+1P+8TYP Floor 9 Staff Accommodation." },
+        ],
+    },
+    {
+        company: "Emt Electromechanical Woks LLC",
+        logo:"/completed-projects/Emt Electromechanical Woks LLC/logo.png",
+        projects: [
+            { image: "/completed-projects/Emt Electromechanical Woks LLC/img 1.png", title: "The Address Residences Dubai Opera A2-A3 On Plot No 3456900, Duabi Downtown." },
+        ],
+    },
+    {
+        company: "Light moon",
+        logo:"/completed-projects/Light moon/logo.png",
+        projects: [
+            { image: "/completed-projects/Light moon/img 1.png", title: "Sarab Villas at Al Jada,Sharjah U.A.E." },
+            { image: "/completed-projects/Light moon/img 2.png", title: "R-1083 AL Qusais, Residential Development." },
+            { image: "/completed-projects/Light moon/img 3.png", title: "Proposed G+1 Town House@HADAEQ Sheikh Mohammed Bin Rashid." },
+        ],
+    },
+    {
+        company: "Specton",
+        logo:"/completed-projects/Specton/logo.png",
+        projects: [
+            { image: "/completed-projects/Specton/logo.png", title: "The Royal Atlantis Resort and Residences(Packagaes M2 & M3)." },
+        ],
+    },
+    {
+        company: "Elemec electrical Contracting L.L.C",
+        logo:"/completed-projects/Elemec electrical Contracting L.L.C/logo.png",
+        projects: [
+            { 'image': "/completed-projects/Elemec electrical Contracting L.L.C/img 1.png", title: "EKPC-3LONG Termexpansion." },
+            { image: "/completed-projects/Elemec electrical Contracting L.L.C/img 2.png", title: "AL BARSHA, RESIDENTIAL & COMMERCIAL BUILDING[2B+G+6 TYP ABDUL WAHID HASSAN MOHD.AL ROSTAMANI." },
+            { image: "/completed-projects/Elemec electrical Contracting L.L.C/img 3.png", title: "AL MUHAISNAH RESIDANTIAL COMPLEX." },
+            { image: "/completed-projects/Elemec electrical Contracting L.L.C/img 4.png", title: "Shopping Center & Residential Building (3B+G+M+4+2R) in Al Garhoud Dubai." },
+            { image: "/completed-projects/Elemec electrical Contracting L.L.C/img 5.png", title: "Design & Construction of DH-0036 Beachfront Tower (1+B+G_36F+TC) at JBR-La Vie, Dubai." },
+            { image: "/completed-projects/Elemec electrical Contracting L.L.C/img 6.png", title: "Main Construction works for Port De LA Mer (PDLM) Phase 4 Buildings (Building 1,2&3), Dubai" },
+
+        ],
+    },
+    {
+        company: "Verger Delporte u.a.e l.t.d",
+        logo:"/completed-projects/Verger Delporte u.a.e l.t.d/logo.png",
+        projects: [
+            { image: "/completed-projects/Verger Delporte u.a.e l.t.d/img 1.png", title: "Verger Concrete Technology LLC" },
+        ],
+    },
+    {
+        company: "IHCC WE DESIGN & BUILD THE FUTURE",
+        logo:"/completed-projects/IHCC WE DESIGN & BUILD THE FUTURE/logo.png",
+        projects: [
+            { image: "/completed-projects/IHCC WE DESIGN & BUILD THE FUTURE/img 1.png", title: "International Hospital Construction Co.Ltd" },
+        ],
+    },
+];
+
+export const ongoingProjects: CompanyProjects[] = [
+    {
+        company: "GRANADA EUROPE CONSTRUCTION LLC",
+        logo:"/ongoing-projects/GRANADA EUROPE CONSTRUCTION LLC/logo.png",
+        projects: [
+            { image: "/ongoing-projects/GRANADA EUROPE CONSTRUCTION LLC/img1.png", title: "AL MARYAH VISTA 1&2" },
+        ],
+    },
+    {
+        company: "VERGER DELPORTE U.A.E LTD",
+        logo:"/ongoing-projects/VERGER DELPORTE U.A.E LTD/logo.png",
+        projects: [
+            { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img1.jpg", title: "Sheikh Zayed Cricket Stadium" },
+            { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img2.png", title: "Palm Jumeirah Villa Project" },
+        ],
+    },
+    {
+        company: "ABRAJ ELECTROMECHANICAL  WORK L.L.C",
+        logo:"/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/logo.webp",
+        projects: [
+            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img1.png", title: "E-167 villa @Emirates Hills" },
+            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img2.png", title: "P-47 @ Dubai Hills" },
+            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img3.png", title: "V004 villa @ Jumeirah Estate" },
+        ],
+    },
+    {
+        company: "SPECTRUM CUBE",
+        logo:"/ongoing-projects/SPECTRUM CUBE/logo.png",
+        projects: [
+            { image: "/ongoing-projects/SPECTRUM CUBE/img1.png", title: "Sharjah Oasis Mall" },
+            { image: "/ongoing-projects/SPECTRUM CUBE/img2.png", title: "Maryam Island Development" },
+        ],
+    },
+    {
+        company: "MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C",
+        logo:"/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/logo.png",
+        projects: [
+            { image: "/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/img1.png", title: "AL Wasal-Qusaia." },
+            { image: "/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/img2.png", title: "AL Wasal-Qusaia." },
+            { image: "/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/img3.png", title: "AL Wasal-Qusaia." },
+            { image: "/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/img4.png", title: "AL Wasal-Qusaia." },
+        ],
+    },
+    {
+        company: "EMT ELECTROMECHNICAL WORKS L.L.C",
+        logo:"/ongoing-projects/EMT ELECTROMECHNICAL WORKS L.L.C/logo.jpg",
+        projects: [
+            { image: "/ongoing-projects/EMT ELECTROMECHNICAL WORKS L.L.C/img1.png", title: "2B+G+3 Floors+RF+TF On Plat No.2140909,Al Garhoud. Dubai, UAE." },
+            { image: "/ongoing-projects/EMT ELECTROMECHNICAL WORKS L.L.C/img2.png", title: "Jewel of the Creek, Dubai, UAE." },
+        ],
+    },
+
+];
