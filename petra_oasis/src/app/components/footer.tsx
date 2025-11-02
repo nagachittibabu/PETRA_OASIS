@@ -77,7 +77,7 @@ const Footer = () => {
             <div >
               <h4 className="font-semibold text-[14px]"><i className='pr-2 bx bxs-envelope' ></i>MAIL US</h4>
               <div className="flex flex-col xl:flex-row lg:flex-row md:flex-row sm:flex-row text-[11px]">
-                <a href="mailto:info@wahatsiwa.in" className="hover:underline block ">info@wahatsiwa.in,</a>
+                <a href="mailto:info@wahatsiwa.in" className="hover:underline block "></a>
                 <a href="mailto:wahatliwantechllc@gmail.com" className="hover:underline block text-[12px]">wahatliwantechllc@gmail.com</a>
               </div>
             </div>
