@@ -11,7 +11,7 @@ const CompleteProjects: React.FC = () => {
         <div className="w-full bg-gray-50 py-10 md:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
                 <div>
-                    <p className='text-sm font-semibold text-green-600 tracking-wider uppercase mb-2'>Our Track Record</p>
+                    <p className='text-sm font-semibold text-blue-600 tracking-wider uppercase mb-2'>Our Track Record</p>
                 </div>
                 <div>
                     <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900'>
