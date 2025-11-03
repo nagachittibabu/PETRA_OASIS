@@ -1,4 +1,10 @@
 @import "tailwindcss";
+
+header,footer{
+  background-color:rgb(0, 0, 81) !important;
+  z-index: 400;
+}
+
 .main_section {
   box-shadow: 10px 10px 70px #8c8a88;
 }
