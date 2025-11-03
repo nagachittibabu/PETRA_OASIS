@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { commitment, commitmentcards } from '../export';
-import CommitmentCard from '../cards/commitmentCard';
+import CommitmentCard from '../cards/cards/commitmentCard';
 
 interface CommitmentItem {
     about1: string;
