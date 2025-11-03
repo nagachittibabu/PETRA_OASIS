@@ -30,9 +30,9 @@ const PromiseSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pb-12">
         <h1
           data-aos="fade-up"
-          className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+          className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
         >
-          Our <span className="text-green-600">Elevated</span> Commitment to You
+          Our Elevated Commitment to You
         </h1>
         <p data-aos="fade-up" data-aos-delay="100" className="mt-4 text-xl text-gray-600 max-w-4xl mx-auto">
           We don't just build; we deliver on key promises that elevate your entire project experience.
@@ -47,8 +47,8 @@ const PromiseSection = () => {
           data-aos-delay="200"
           className={`
             grid gap-12 sm:gap-16 
-            sm:grid-cols-2 lg:grid-cols-3 // Standard grid layout
-            items-start // Ensures alignment at the top
+            sm:grid-cols-2 lg:grid-cols-3 
+            items-start 
           `}
         >
           {promisesWithIcons.map((item, index) => (

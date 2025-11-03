@@ -18,7 +18,7 @@ const Projectcard: React.FC<ProjectcardProps> = ({ companyName, projects, logo }
         <section className='w-full max-w-7xl mx-auto py-10 sm:py-16 px-4'>
             <div>
 
-                <div className='flex flex-col sm:flex-row items-center justify-between p-6 mb-8 sm:mb-12 bg-white rounded-xl shadow-lg border-t-4 border-green-600'>
+                <div className='flex flex-col sm:flex-row items-center justify-between p-6 mb-8 sm:mb-12 bg-white rounded-xl shadow-lg border-t-4 border-blue-600'>
 
                     <div className='flex items-center space-x-6 w-full sm:w-auto mb-4 sm:mb-0'>
                         <div className='relative w-24 h-24 sm:w-24 sm:h-28 flex-shrink-0'>
@@ -44,7 +44,7 @@ const Projectcard: React.FC<ProjectcardProps> = ({ companyName, projects, logo }
                         <div
                             key={id}
                             className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100
-                                   flex flex-col sm:flex-row md:flex-col // Responsive layout change
+                                   flex flex-col sm:flex-row md:flex-col 
                                    transition-all duration-300 transform hover:translate-y-[-4px] hover:shadow-2xl"
                         >
 
@@ -56,7 +56,7 @@ const Projectcard: React.FC<ProjectcardProps> = ({ companyName, projects, logo }
                                     className="object-cover"
                                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                                 />
-                                <div className="absolute top-3 left-3 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full">
+                                <div className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full">
                                     FEATURED
                                 </div>
                             </div>

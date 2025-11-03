@@ -41,7 +41,7 @@ const ProjectSectionCard: React.FC<ProjectCardProps> = ({ imageurl, title, descr
                 </p>
 
                 <div className="mt-3">
-                    <span className="text-sm font-semibold text-blue-300 hover:text-green-100 transition-colors">
+                    <span className="text-sm font-semibold text-blue-300 hover:text-blue-100 transition-colors">
                         Explore &rarr;
                     </span>
                 </div>
