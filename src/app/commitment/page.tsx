@@ -20,7 +20,7 @@ const commitmentData: CommitmentItem[] = commitment as any;
 
 const ListItem: React.FC<{ text: string }> = ({ text }) => (
     <div className="flex items-start space-x-3">
-        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-400 flex items-center justify-center mt-1">
+        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-400 flex items-center justify-center mt-1">
             <ArrowRight className="w-4 h-4 text-white" />
         </div>
         <div>
