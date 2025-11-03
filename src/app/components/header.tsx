@@ -24,15 +24,15 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full min-h-[80px] flex flex-col fixed z-[100] bg-blue-800">
-      <div className="w-full flex justify-between items-center px-4 py-2">
+    <header className="w-full h-[100px] flex flex-col fixed z-[100] bg-blue-800 items-center justify-center fixed">
+      <div className="w-full flex justify-between items-center px-4 ">
         {/* company logo */}
-        <div className="flex items-center justify-center">
+        <div className="w-3/4 xl:w-1/4 lg:w-1/4 md:w-1/4 sm:w-1/4 flex items-center justify-center  ">
           <Image
             src="/images/fulllogo.png"
             alt="Company Logo"
             width={250}
-            height={60}
+            height={20}
             className="slide-right"
           />
         </div>
@@ -40,20 +40,21 @@ const Header = () => {
         {/* mobile open/close button */}
         {isMobile && (
           <button
-            className="text-white text-3xl cursor-pointer pr-4 z-[200]"
+            className="w-1/4 h-full text-white text-3xl cursor-pointer pr-4 z-[100]"
             onClick={() => setIsNavVisible(!isNavVisible)}
           >
             <i className={isNavVisible ? "bx bx-x" : "bx bx-menu"}></i>
-          </button>
+          </button>     
         )}
 
         {/* navigation bar */}
         <nav
-          className={`fixed md:relative top-0 right-0 h-full md:h-auto w-64 md:w-auto bg-blue-800 md:bg-transparent text-gray-200 font-bold transform transition-transform duration-500 ease-in-out 
+          className={`w-3/4 
           ${isMobile ? (isNavVisible ? "translate-x-0" : "translate-x-full") : "translate-x-0"}
           `}
         >
-          <ul className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10 p-6 md:p-0 text-sm md:text-[15px] justify-center mt-[100px] md:mt-0 text-white font-semibold xl:text-[15px] lg:text-[15px] md:text-[13px] sm:text-[11px]">
+          <ul className="flex flex-col md:flex-row sm:flex-row  items-start md:items-center gap-4 xl:gap-10 lg:gap-8 md:gap-6 sm:gap-4 p-6 md:p-0  justify-center text-gray-200 font-semibold xl:text-[15px] lg:text-[13px] md:text-[12px] sm:text-[9px] navbar"
+            onMouseLeave={() => { setOpenDropdown(null); setOpenDropdown(null) }} >
             <li style={{ "--delay": "0.2s" } as CSSProperties}>
               <Link href="/">HOME</Link>
             </li>
@@ -67,7 +68,7 @@ const Header = () => {
             {/* PROJECTS dropdown */}
             <li
               style={{ "--delay": "0.8s" } as CSSProperties}
-              onMouseLeave={() => setOpenDropdown(null)}
+
             >
               <div
                 className="relative"
@@ -104,7 +105,7 @@ const Header = () => {
             {/* MORE dropdown */}
             <li
               style={{ "--delay": "1.2s" } as CSSProperties}
-              onMouseLeave={() => setOpenDropdown(null)}
+
             >
               <div
                 className="relative"
