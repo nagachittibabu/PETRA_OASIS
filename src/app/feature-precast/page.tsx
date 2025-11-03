@@ -171,7 +171,7 @@ const Precast = () => {
           </div>
           <div>
             <h3 className="font-bold text-[20px] text-blue-900">
-              Green Design :
+              blue Design :
             </h3>
             <p className="text-gray-600">
               Precast concrete offers a number of environmental benefits. It
