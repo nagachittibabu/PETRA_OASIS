@@ -26,7 +26,7 @@ const ProjectSection = () => {
                 {/* Section Header */}
                 <div data-aos="fade-up" className="text-center mb-16">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4">
-                        <span className="text-green-600">Specialized</span> Projects
+                        <span className="text-blue-600">Specialized</span> Projects
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         Delivering high-quality construction across major industry sectors.
@@ -58,18 +58,18 @@ const ProjectSection = () => {
                 <div className="flex flex-col xl:flex-row items-center py-10 md:py-16">
                     <div className="w-full xl:w-2/5 p-4 order-2 xl:order-1">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 text-center xl:text-left"> 
-                            Dedicated to <span className="text-green-600">Client Satisfaction</span>
+                            Dedicated to <span className="text-blue-600">Client Satisfaction</span>
                         </h2>
                         <p className="text-lg text-gray-700 leading-relaxed text-center xl:text-left">
                             We pride ourselves on our track record of success, working tirelessly to meet and exceed the expectations of thousands of satisfied customers globally. Our commitment to quality ensures long-lasting partnerships and outstanding results.
                         </p>
                         <ul className="mt-4 space-y-2 text-gray-700 text-center xl:text-left">
                             <li className="flex items-center justify-center xl:justify-start">
-                                <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> 
+                                <svg className="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> 
                                 Increased Retention
                             </li>
                             <li className="flex items-center justify-center xl:justify-start">
-                                <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> 
+                                <svg className="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> 
                                 Boosted Brand Loyalty
                             </li>
                         </ul>

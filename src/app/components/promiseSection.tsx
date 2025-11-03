@@ -32,7 +32,7 @@ const PromiseSection = () => {
           data-aos="fade-up"
           className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
         >
-          Our <span className="text-green-600">Elevated</span> Commitment to You
+          Our <span className="text-blue-500">Elevated</span> Commitment to You
         </h1>
         <p data-aos="fade-up" data-aos-delay="100" className="mt-4 text-xl text-gray-600 max-w-4xl mx-auto">
           We don't just build; we deliver on key promises that elevate your entire project experience.

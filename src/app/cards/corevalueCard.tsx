@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-interface CoreValueCardProps
- {
+interface CoreValueCardProps {
   imageurl: string;
   title: string;
   description: string;
@@ -14,16 +13,11 @@ const CoreValueCard: React.FC<CoreValueCardProps> = ({ imageurl, title, descript
       className="
         relative w-full h-full p-6 sm:p-8 bg-white rounded-xl shadow-xl 
         flex flex-col items-center justify-center text-center 
-        overflow-hidden cursor-pointer group // Added 'group' for hover effects
-        transform transition-all duration-700 ease-out // Smooth entry and hover
-        hover:shadow-2xl hover:scale-[1.03]
+        overflow-hidden cursor-pointer group group-hover:max-h-full
+        transform transition-all duration-700 ease-out 
+        hover:shadow-2xl hover:shadow-orange-200 h-[250px]
       "
     >
-      <div 
-        className="absolute inset-0 bg-gradient-to-br from-blue-50 to-white 
-                   transform -skew-y-6 scale-150 group-hover:skew-y-0 group-hover:scale-100 
-                   transition-all duration-700 ease-out opacity-70"
-      ></div>
 
       <div className="relative z-10 mb-6 
                       transform translate-y-0 group-hover:-translate-y-4 
@@ -33,7 +27,7 @@ const CoreValueCard: React.FC<CoreValueCardProps> = ({ imageurl, title, descript
           alt={title}
           width={96}
           height={96}
-          className="w-20 h-20 sm:w-24 sm:h-24 object-contain filter drop-shadow-md"
+          className="w-20 h-20 sm:w-24 sm:h-24 object-contain"
         />
       </div>
 

@@ -29,10 +29,10 @@ const PromiseCard: React.FC<PromiseCardProps> = ({ imageurl, title, description,
       className={`
         w-full p-6 sm:p-8 bg-white rounded-xl shadow-2xl 
         flex flex-col items-center text-center 
-        transform transition duration-500 hover:shadow-3xl hover:translate-y-[-8px]
+        transform transition duration-500 hover:shadow-2xl hover:shadow-orange-200 hover:translate-y-[-8px] h-[500px]
       `}
     >
-      <div className="p-4 rounded-full bg-green-500 text-white shadow-xl -mt-12 mb-4 ring-4 ring-white">
+      <div className="p-4 rounded-full bg-blue-400 text-white shadow-xl -mt-12 mb-4 ring-4 ring-white">
         <IconComponent className="w-8 h-8" />
       </div>
 
