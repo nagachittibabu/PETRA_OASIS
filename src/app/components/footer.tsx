@@ -7,7 +7,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="w-full  h-max xl:h-[330px] lg:h-[300px] md:h-[280px] sm:h-[470px] ">
-      <div className="w-full h-[500px] xl:h-[280px] lg:h-[250px] md:h-[230px] sm:h-[420px] flex flex-wrap xl:justify-evenly lg:justify-evenly md:justify-center sm:justify-evenly items-center bg-blue-800 text-gray-100 xl:p-0 lg:p-0 md:p-0 sm:p-6 p-2  h-max space-x-0 md:space-x-6">
+      <div className="w-full h-[500px] xl:h-[280px] lg:h-[250px] md:h-[230px] sm:h-[420px] flex flex-wrap xl:justify-evenly lg:justify-evenly md:justify-center sm:justify-evenly items-center  text-gray-100 xl:p-0 lg:p-0 md:p-0 sm:p-6 p-2  h-max space-x-0 md:space-x-6">
         <div className="w-1/2 xl:w-1/5 lg:w-1/5 md:w-1/4 sm:w-1/2 h-[60%] xl:h-full lg:h-full md:h-full sm:h-[60%]  flex justify-center items-center width50   footer_section ">
           <div className="w-[80%] xl:w-3/4 lg:w-full md:w-full sm:w-[80%]  h-full padding-down space-y-2 flex flex-col items-center justify-center">
             <div className="w-[200px] h-[20%] flex items-center justify-center ">
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[50px] bg-orange-400 flex justify-around  items-center xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft font-semibold text-[9px]">
+      <div className="w-full h-[50px] bg-orange-500 flex justify-around  items-center xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft font-semibold text-[9px]">
         <p className="text-center font-bold">&copy;copyright2025</p>
         <p>Developed by G.Naga Chittibabu, J.Savya & P.Veeraswamy</p>
       </div>
