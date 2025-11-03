@@ -1,14 +1,12 @@
 'use client';
 
 import React, { useRef, useMemo } from 'react';
-// ASSUMPTION: Update the import source to a new data export for ongoing projects
 import { ongoingProjects } from "../export";
 import Projectcard from '../components/projectcard';
 
 const OngoingProjects: React.FC = () => {
     const projectsRef = useRef<HTMLDivElement>(null);
 
-    // Calculate the total number of ongoing projects
     const totalProjects = useMemo(() => {
         return ongoingProjects.reduce((sum, group) => sum + group.projects.length, 0);
     }, []);
