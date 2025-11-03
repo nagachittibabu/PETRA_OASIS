@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { about, aboutcards } from '../export';
-import AboutCard from '../cards/aboutCard';
+import AboutCard from '../cards/cards/aboutCard';
 
 const AboutUs = () => {
     return (

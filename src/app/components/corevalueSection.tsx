@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import { corevalues } from "../export";
-import CoreValueCard from "../cards/corevalueCard";
+import CoreValueCard from "../cards/cards/corevalueCard";
 
 
 const CoreValueSection = () => {
