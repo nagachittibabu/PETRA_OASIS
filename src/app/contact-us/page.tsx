@@ -32,7 +32,6 @@ const ContactPage = () => {
                                 />
                             </div>
 
-                            {/* Email */}
                             <div>
                                 <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-2">Email Address</label>
                                 <input

@@ -13,7 +13,7 @@ const ServicesPage: React.FC = () => {
                 <div className="max-w-7xl mx-auto">
                     <div>
                         <h1
-                            className="text-4xl sm:text-5xl font-extrabold text-gray-900 text-center mb-16"
+                            className="text-4xl sm:text-5xl font-bold text-gray-900 text-center mb-16"
                             data-aos="fade-up"
                             data-aos-delay="100"
                         >

@@ -23,17 +23,15 @@ const ProjectSection = () => {
             className="w-full py-16 md:py-24 bg-white"
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
                 <div data-aos="fade-up" className="text-center mb-16">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4">
-                        <span className="text-blue-600">Specialized</span> Projects
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
+                        Specialized Projects
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         Delivering high-quality construction across major industry sectors.
                     </p>
                 </div>
 
-                {/* Projects Grid: Responsive grid structure */}
                 <div
                     className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3" 
                 >
@@ -57,7 +55,7 @@ const ProjectSection = () => {
             <div className="max-w-7xl mx-auto mt-20 md:mt-32 px-4 sm:px-6 lg:px-8 bg-gray-50 border-t border-b border-gray-200">
                 <div className="flex flex-col xl:flex-row items-center py-10 md:py-16">
                     <div className="w-full xl:w-2/5 p-4 order-2 xl:order-1">
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 text-center xl:text-left"> 
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center xl:text-left"> 
                             Dedicated to <span className="text-blue-600">Client Satisfaction</span>
                         </h2>
                         <p className="text-lg text-gray-700 leading-relaxed text-center xl:text-left">

@@ -44,7 +44,7 @@ const Projectcard: React.FC<ProjectcardProps> = ({ companyName, projects, logo }
                         <div
                             key={id}
                             className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100
-                                   flex flex-col sm:flex-row md:flex-col // Responsive layout change
+                                   flex flex-col sm:flex-row md:flex-col 
                                    transition-all duration-300 transform hover:translate-y-[-4px] hover:shadow-2xl"
                         >
 
