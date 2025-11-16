@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  compiler: {
+    reactRemoveProperties: true,
+    styledComponents: true
+  }
+
 };
 
 export default nextConfig;
