@@ -45,7 +45,7 @@ const ProjectSection = () => {
                                 imageurl={item.image} 
                                 title={item.title} 
                                 description={item.about} 
-                                banner={item.banner} 
+                                video={item.video} 
                             />
                         </div>
                     ))}

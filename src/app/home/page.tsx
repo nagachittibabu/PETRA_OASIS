@@ -1,20 +1,26 @@
-import React from 'react'
 import PromiseSection from '../components/promiseSection';
 import CoreValueSection from '../components/corevalueSection';
 import ProjectSection from '../components/projectSection';
 import HomeCarousel from '../components/HomeCarousel';
+import ClientSection from '../components/clientSection';
+import TeamSection from '../components/teamSection';
+import Footer from '../components/footer';
+
 
 
 
 const HomePage = () => {
 
   return (
-    <div className='w-full h-full flex flex-col gap-y-4 '>
+    <div className="w-full h-full bg-white">
       <HomeCarousel />
-      <PromiseSection/>
+      <PromiseSection />
       <CoreValueSection />
       <ProjectSection />
-=    </div>
+      <TeamSection />
+      <ClientSection />  
+      <Footer />
+</div>
   )
 }
 
