@@ -6,6 +6,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { commitment, commitmentcards } from '../export';
 import CommitmentCard from '../cards/cards/commitmentCard';
+import ClientSection from '../components/clientSection';
+import Footer from '../components/footer';
+
 
 interface CommitmentItem {
     about1: string;
@@ -42,8 +45,8 @@ const Commitment: React.FC = () => {
     }, []);
 
     return (
-        <section id="about" className="w-full py-20 px-4 sm:px-6 lg:px-20 bg-white">
-            <div className="max-w-screen-xl mx-auto">
+        <section id="about" className="w-full  bg-white">
+            <div className="max-w-screen-xl mx-auto py-12">
                 <div>
                     <h2
                         className="text-3xl sm:text-4xl xl:text-5xl font-bold text-center text-black mb-16"
@@ -133,6 +136,7 @@ const Commitment: React.FC = () => {
                     ))}
                 </div>
             </div>
+            <Footer />
         </section>
     );
 };

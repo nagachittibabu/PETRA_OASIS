@@ -1,23 +1,27 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface ProjectCardProps {
     imageurl: string;
     title: string;
     description: string;
-    banner: string;
+    video: string;
 }
 
-const ProjectSectionCard: React.FC<ProjectCardProps> = ({ imageurl, title, description, banner }) => {
+const ProjectSectionCard: React.FC<ProjectCardProps> = ({ imageurl, title, description, video }) => {
     return (
         <div className='relative w-full h-[350px] sm:h-[400px] rounded-xl overflow-hidden shadow-xl group cursor-pointer'>
             
-            <Image 
-                src={banner} 
-                alt={`${title} project banner`} 
-                fill 
-                className='object-cover transition-transform duration-500 group-hover:scale-105'
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            <video 
+                src={video} 
+                className="object-cover w-full h-full"
+                autoPlay
+                loop
+                muted
+                playsInline
+                onMouseEnter={(e) => e.currentTarget.play()}
+                onMouseLeave={(e) => e.currentTarget.pause()}
             />
             
             <div className='absolute inset-0 bg-black/40 transition-colors duration-300 group-hover:bg-black/60 flex flex-col justify-end p-6'>
@@ -41,9 +45,9 @@ const ProjectSectionCard: React.FC<ProjectCardProps> = ({ imageurl, title, descr
                 </p>
 
                 <div className="mt-3">
-                    <span className="text-sm font-semibold text-blue-300 hover:text-blue-100 transition-colors">
+                    <Link href={"/completed-projects"} className="text-sm font-semibold text-blue-300 hover:text-blue-100 transition-colors">
                         Explore &rarr;
-                    </span>
+                    </Link>
                 </div>
             </div>
         </div>

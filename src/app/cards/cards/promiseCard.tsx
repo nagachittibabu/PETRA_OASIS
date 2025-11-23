@@ -45,15 +45,15 @@ const PromiseCard: React.FC<PromiseCardProps> = ({
 
   return (
     <div
-      className="w-full h-full max-w-[360px] bg-white rounded-xl shadow-xl flex flex-col items-center text-center p-6 sm:p-8 
-        transform transition duration-500 hover:translate-y-[-8px] hover:shadow-2xl">
+      className="w-full h-full max-w-[360px] bg-white rounded-2xl shadow-xl flex flex-col items-center text-center p-6 sm:p-8 
+        transform transition duration-500 hover:translate-y-[-8px] hover:shadow-2xl hover:shadow-2xl hover:shadow-orange-200">
       <div className="p-4 rounded-full bg-blue-500 text-white shadow-xl -mt-12 mb-4 ring-4 ring-white">
         <IconComponent className="w-8 h-8" />
       </div>
 
       <h2 className="text-xl font-bold text-gray-800 mb-3 mt-4">{title}</h2>
 
-      <p className="text-base text-gray-600 leading-relaxed flex-grow">
+      <p className="text-[14px] text-gray-600 leading-[20px] flex-grow font-normal">
         {description}
       </p>
 
@@ -63,7 +63,7 @@ const PromiseCard: React.FC<PromiseCardProps> = ({
           alt={`Image for ${title}`}
           fill
           sizes="(max-width: 640px) 100vw, 33vw"
-          className="object-cover opacity-70 hover:opacity-100 transition duration-300"
+          className="object-cover transition duration-300"
         />
       </div>
     </div>

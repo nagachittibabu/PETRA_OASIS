@@ -4,11 +4,14 @@ import React from 'react';
 import Image from 'next/image';
 import { about, aboutcards } from '../export';
 import AboutCard from '../cards/cards/aboutCard';
+import ClientSection from '../components/clientSection';
+import CoreValueSection from '../components/corevalueSection';
+import Footer from '../components/footer';
 
 const AboutUs = () => {
     return (
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-16 bg-white">
-            <div className="bg-white pt-16 sm:pt-24 pb-8">
+        <section className="w-full  bg-white">
+            <div className="bg-white py-4">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div>
                         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 text-center mb-4">
@@ -93,6 +96,9 @@ const AboutUs = () => {
                     </div>
                 ))}
             </div>
+            <CoreValueSection />
+            <ClientSection />
+            <Footer />
         </section>
     );
 };

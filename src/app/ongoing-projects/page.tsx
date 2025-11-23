@@ -3,6 +3,7 @@
 import React, { useRef, useMemo } from 'react';
 import { ongoingProjects } from "../export";
 import Projectcard from '../components/projectcard';
+import Footer from '../components/footer';
 
 const OngoingProjects: React.FC = () => {
     const projectsRef = useRef<HTMLDivElement>(null);
@@ -12,7 +13,7 @@ const OngoingProjects: React.FC = () => {
     }, []);
 
     return (
-        <div className="w-full bg-gray-50 py-10 md:py-20">
+        <div className="w-full bg-gray-50 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 sm:mb-12">
                 <p className='text-sm font-semibold text-blue-600 tracking-wider uppercase mb-2'>Currently In Progress</p>
                 <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900'>
@@ -37,6 +38,7 @@ const OngoingProjects: React.FC = () => {
                     />
                 ))}
             </div>
+            <Footer />
         </div>
     );
 };
