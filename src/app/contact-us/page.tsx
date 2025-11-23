@@ -1,12 +1,10 @@
 "use client";
-
-import React from "react";
-import Image from "next/image";
+import Footer from "../components/footer";
 
 const ContactPage = () => {
     return (
-        <section className="w-full min-h-screen bg-white relative">
-            <div className="container mx-auto px-4 py-16 md:py-24">
+        <section className="w-full min-h-screen bg-white relative ">
+            <div className="container mx-auto px-4 py-16 md:py-24 slide-up">
                 <div>
                     <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
                         Let's Build Something Great Together
@@ -123,6 +121,7 @@ const ContactPage = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </section>
     );
 };
