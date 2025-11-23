@@ -5,14 +5,13 @@ import { completedProjects } from "../export";
 import Projectcard from '../components/projectcard';
 import ClientSection from '../components/clientSection';
 import Footer from '../components/footer';
-import Header from '../components/header';
+
 
 const CompleteProjects: React.FC = () => {
     const projectsRef = useRef<HTMLDivElement>(null);
 
     return (
         <div className="w-full bg-gray-50 ">
-            <Header />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
                 <div>
                     <p className='text-sm font-semibold text-blue-600 tracking-wider uppercase mb-2'>Our Track Record</p>

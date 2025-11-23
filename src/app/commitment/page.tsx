@@ -7,9 +7,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { commitment, commitmentcards } from '../export';
 import CommitmentCard from '../cards/cards/commitmentCard';
-import Header from '../components/header';
 import ClientSection from '../components/clientSection';
 import Footer from '../components/footer';
+
 
 interface CommitmentItem {
     about1: string;
@@ -47,7 +47,6 @@ const Commitment: React.FC = () => {
 
     return (
         <section id="about" className="w-full  bg-white">
-            <Header />
             <div className="max-w-screen-xl mx-auto py-12">
                 <div>
                     <h2

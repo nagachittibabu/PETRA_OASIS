@@ -20,7 +20,7 @@ const CoreValueSection = () => {
     return (
         <section
             id="core-values"
-            className="w-full bg-gradient-to-b from-gray-50 to-white py-20 sm:py-28"
+            className="w-full bg-gradient-to-b from-gray-50 to-white py-20 sm:py-28 h-max xl:h-[700px] lg:h-[1200px] md:h-[1100px]  sm:h-max "
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div>
@@ -35,7 +35,7 @@ const CoreValueSection = () => {
                     data-aos="fade-up"
                     data-aos-delay="200"
                     className="
-                        grid gap-10 sm:gap-14 
+                        grid gap-10 xl:grid-cols-4 sm:gap-14 
                         sm:grid-cols-2 lg:grid-cols-4 
                     "
                 >

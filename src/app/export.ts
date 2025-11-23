@@ -56,7 +56,7 @@ export const aboutcards = [
 export interface Service {
     title: string;
     about: string;
-    image: string;
+    video: string;
     points: string[];
 }
 
@@ -64,7 +64,7 @@ export const services: Service[] = [
     {
         title: "Mechanical (HVAC & Refrigeration)",
         about: "Expertise in complex climate control and air handling systems.",
-        image: "/mechanic.png",
+        video: "/videos/mechanicalVideo.mp4",
         points: [
             "Heating, Ventilation & Air Conditioning (HVAC) System installation and maintenance.",
             "All types of Air Conditioning Systems (Centralized, Wall-Mounted, Split, Ducted).",
@@ -78,7 +78,7 @@ export const services: Service[] = [
     {
         title: "Ducting & Drainage",
         about: "Complete solutions for water, drainage, and utility piping systems.",
-        image: "/ducking.png", 
+        video: "/videos/ductingVideo.mp4", 
         points: [
             "Design & Installation of plumbing, drainage, and sanitary systems.",
             "Pump, Tank, and Booster System Installation (Potable Water & Firefighting).",
@@ -92,7 +92,7 @@ export const services: Service[] = [
     {
         title: "Electrical",
         about: "High-level execution of power distribution and smart building systems.",
-        image: "/electrical.png",
+        video: "/videos/electricalVideo.mp4",
         points: [
             "Electrical Engineering design, load calculation, and product selection.",
             "Installations of Electrical Panel Systems (MDBs, SMDBs, DBs, Capacitor Banks).",
@@ -108,35 +108,35 @@ export const services: Service[] = [
 
 export const ourpromises = [
     {
-        'image': '/images/promiseimage1.png',
-        'title': 'Our Promise as a contractor is to build your project',
-        'description': 'The process of commercial building construction involves designing, planning, and constructing buildings intended for commercial use.These structures serve various purposes, such as retail stores, office buildings and educational institutions.',
+        'image': '/images/helpersquoteimage.jpg',
+        'title': 'Our Commitment to Excellence',
+        'description': 'At Petra Oasis Electromechanical Works L.L.C., we deliver reliable manpower and technical support for every project. From skilled helpers to specialized trades, our promise is to provide safe, efficient, and quality-driven services that meet Dubai’s highest standards.',
         'label': 'Read More'
-    },
-    {
-        'image': '/images/promiseimage2.png',
-        'title': 'Professional Homes Constructions',
-        'description': 'The construction process includes several stages: site selection and preparation, architectural design, engineering, material procurement, actual construction, and commissioning.',
+      },
+      {
+        'image': '/images/mechanicalimage.jpg',
+        'title': 'Expert Electromechanical Solutions',
+        'description': 'We specialize in mechanical, electrical, and plumbing works that power modern infrastructure. Petra Oasis ensures precision in installation, maintenance, and commissioning—bringing professional expertise to residential, commercial, and industrial projects across the UAE.',
         'label': 'Read More'
-    },
-    {
-        'image': '/images/promiseimage3.png',
-        'title': 'Architecture Design',
-        'description': 'Collaboration among professionals—such as architects, engineers, contractors, and subcontractors—is crucial to ensure compliance with local building codes and regulations.',
+      },
+      {
+        'image': '/images/ductingquoteimage.jpg',
+        'title': 'Innovative Design & Implementation',
+        'description': 'Our team collaborates with engineers, supervisors, and contractors to deliver ducting, plumbing, and HVAC solutions that align with regional codes and sustainability goals. Petra Oasis integrates design with execution to achieve seamless, compliant, and future-ready systems.',
         'label': 'Read More'
-    },
+      }
 ]
 
 export const corevalues = [
     {
         'image': '/images/mission.png',
         'title': 'Our Mission',
-        'about': 'Our mission is that with our credibility, commitment, quality, cost efficiency, capability and financial soundness, with abundant resources of highly skilled and self-motivated engineers and staff make us a perfect choice for solving any kind of electro-mechanical work'
+        'about': 'At Petra Oasis, our mission is to provide innovative and world-class solutions through the best people, processes, and systems. We are committed to partnership, exceptional service, and delivering projects on time and within budget with the highest levels of quality and attention to detail.'
     },
     {
         'image': '/images/house.png',
         'title': 'Residential',
-        'about': 'Residential construction involves building homes, apartments, and other dwellings. It’s a dynamic industry shaping our living spaces globally.',
+        'about': 'Petra Oasis specializes in residential construction, offering homes, apartments, and living spaces built with precision and efficiency. Timeliness, value-per-square-foot, and customer satisfaction are at the core of our efforts.',
         'points': [
             "Foster a professional and ethical work environment.",
             "Set safety and quality as our top priorities.",
@@ -148,52 +148,51 @@ export const corevalues = [
     {
         'image': '/images/experience.jpeg',
         'title': 'Experience',
-        'about': 'We have 10+ years of the Experience in Residential , commercial , industrial Construnctions and other constructions.'
+        'about': 'Established in 2015 in Sharjah, UAE, Petra Oasis has built a strong reputation as one of the leading MEP & Civil contracting companies in the region. With years of expertise, we have successfully delivered residential, commercial, and industrial projects with excellence and reliability.'
     },
     {
         'image': '/images/safety.png',
         'title': 'Safety',
-        'about': 'Wahat Liwan Technical Services L.L.C Safety Culture is Great and We Follow All the Rules, that’s the reason we have no safety incidents in our entire tenure. “Safety First” for all employees is embedded in ourcompany culture from top to bottom.'
-    },
-
+        'about': 'Safety is embedded in Petra Oasis’s culture from top to bottom. We follow all rules and regulations rigorously, ensuring zero incidents across our projects. “Safety First” is not just a slogan but a guiding principle for every employee and every site we operate.'
+    }
 ]
 
 export const projects = [
     {
         'image': '/images/commercial-building.png',
-        'banner': '/images/commercialbanner.png',
+        'video': '/videos/commercialVideo.mp4',
         'title': 'Commercial',
         'about': 'These structures serve various purposes, such as retail stores, office buildings, warehouses, hotels, hospitals, and educational institutions.'
 
     },
     {
         'image': '/images/residential.png',
-        'banner': '/images/companybanner.png',
+        'video': '/videos/commercialVideo.mp4',
         'title': 'Residential',
         'about': 'Residential construction involves building homes, apartments, and other dwellings. It’s a dynamic industry shaping our living spaces globally.'
     },
     {
         'image': '/images/industrial.png',
-        'banner': '/images/industrailbanner.png',
+        'video': '/videos/commercialVideo.mp4',
         'title': 'Industrial',
         'about': 'Industrial properties cater to manufacturing, warehousing, and logistics needs Examples: factories, distribution centers, and industrial parks.'
     },
     {
         'image': '/images/educational.png',
-        'banner': '/images/educationalbanner.png',
+        'video': '/videos/commercialVideo.mp4',
         'title': 'Educational',
         'about': 'Educational properties serve learning institutions. Examples: schools, colleges, and universities.'
 
     },
     {
         'image': '/images/hospital.png',
-        'banner': '/images/hospitalitybannner.png',
+        'video': '/videos/commercialVideo.mp4',
         'title': 'Hospitality',
         'about': 'Hospitality properties provide lodging, dining, and leisure services. Examples: hotels, restaurants, and resorts.'
     },
     {
         'image': '/images/medical.png',
-        'banner': '/images/hospitalbanner.png',
+        'video': '/videos/commercialVideo.mp4',
         'title': 'Medical',
         'about': 'Medical properties support healthcare services. Examples: hospitals, clinics, and medical office buildings.'
     }

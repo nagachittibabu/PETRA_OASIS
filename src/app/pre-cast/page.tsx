@@ -2,33 +2,43 @@ import Image from "next/image";
 import Gallery from "../cards/cards/imageGallery";
 import ProjectDetailCard from "../cards/cards/projectDetailsCard";
 import LogoGallery from "../cards/cards/logoGallery";
-import Header from "../components/header";
 import ClientSection from "../components/clientSection";
 import Footer from "../components/footer";
 let count = 0;
 const Precast = () => {
-  const images = [
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-    "/precast_images/1.webp",
-  ];
+
+  const gallery = [
+    "/precast/images/Gallery/1.jpg",
+    "/precast/images/Gallery/2.jpg",
+    "/precast/images/Gallery/3.jpg",
+    "/precast/images/Gallery/4.jpg",
+    "/precast/images/Gallery/5.jpg",
+    "/precast/images/Gallery/3.jpg",
+    "/precast/images/Gallery/4.jpg",
+    "/precast/images/Gallery/5.jpg",
+    "/precast/images/Gallery/5.jpg",
+    "/precast/images/Gallery/5.jpg"
+  ]
+
+  const OngoingProject1Logos = Array.from({ length: 15 }, (_, i) =>
+    `/precast/images/ongoing_projects_1/logos/logo${i + 1}.png`
+  );
+
+  const mepImagesOngoing1 = Array.from({ length: 19 }, (_, i) =>
+    `/precast/images/ongoing_projects_1/precast_mep/logo${i + 1}.png`
+  );
+
+  const ongoingProject1 = {
+     "projectName": "Baniyas North Development-Phase 3A & 3B – Abu Dhabi." ,
+     "clientName": "Aldar Properties L.L.C.", 
+     "consultantName": "Motta Macdonald." ,
+     "mainConstructor": "China State Construction Engineering Corporation Middle East L.L.C." ,
+     "companyLogos": OngoingProject1Logos ,
+     "mepImages": mepImagesOngoing1 
+  }
 
   return (
     <section className=" section w-full h-full flex justify-center items-center  flex-col ">
-      <Header />
       <div className="   w-[90%] h-[90%]  flex justify-center items-center space-y-10  flex-col  main_section">
         <div className="   w-[90%] h-[200px] text-center precast_building box_shadow">
           <h1 className=" heading text-[30px] xl:text-[50px] lg:text-[46px] md:text-[43px] sm:text-[38px]  font-bold text-blue-800">
@@ -38,7 +48,7 @@ const Precast = () => {
             We are specialists In MEP Precast panel Manufacturing services.
           </h2>
         </div>
-        <div className= " intro box_shadow  xl:text-[18px] xl:w-[90%] xl:h-[600px] w-[90%] h-[600px] lg:w-[90%] lg:h-[700px]   lg:p-[20px] md:w-[90%] md:h-[94%] md:p-[10px] sm:w-[90%] sm:h-[95%]  sm:p-[10px] flex justify-center  flex-col space-y-10 text-[18px] font-serif   ">
+        <div className=" intro box_shadow  xl:text-[18px] xl:w-[90%] xl:h-[600px] w-[90%] h-[600px] lg:w-[90%] lg:h-[700px]   lg:p-[20px] md:w-[90%] md:h-[94%] md:p-[10px] sm:w-[90%] sm:h-[95%]  sm:p-[10px] flex justify-center  flex-col space-y-10 text-[18px] font-serif   ">
           <div className="font-serif  ">
             <p>
               <span className="font-bold text-blue-800">Introduction :</span>{" "}
@@ -254,22 +264,23 @@ const Precast = () => {
             </p>
           </div>
         </div>
-        <Gallery GalleryImages={images} />
+        <Gallery GalleryImages={gallery} />
+          <>
+            <ProjectDetailCard
+              projectType="Ongoing project "
+              projectTitle={ongoingProject1.projectName}
+              clientName={ongoingProject1.clientName}
+              consultantName="Motta Macdonald."
+              mainConstructor="China State Construction Engineering Corporation Middle East L.L.C."
+              companyLogo=""
+              projectImages={ongoingProject1.mepImages}
 
-        <ProjectDetailCard
-          projectType="Ongoing project "
-          projectTitle="Baniyas North Development-Phase 3A & 3B – Abu Dhabi."
-          clientName="Aldar Properties L.L.C."
-          consultantName="Motta Macdonald."
-          mainConstructor="China State Construction Engineering Corporation Middle East L.L.C."
-          companyLogo="/precast_images/1.webp"
-          projectImages={images}
-          
-        />
-        <LogoGallery LogoImages={images} />
-        <LogoGallery LogoImages={images} />
-        <Gallery GalleryImages={images} />
-        <ProjectDetailCard
+            />
+            <LogoGallery LogoImages={ongoingProject1.companyLogos} />
+            <LogoGallery LogoImages={ongoingProject1.companyLogos} />
+            <Gallery GalleryImages={ongoingProject1.mepImages} />
+          </>
+        {/* <ProjectDetailCard
           projectType="Ongoing project "
           projectTitle="BThe sustainable City Abu Dhabi, Yas Island.."
           clientName="Aldar Properties L.L.C and Diamond Developers."
@@ -277,9 +288,9 @@ const Precast = () => {
           mainConstructor="Jeet MEP."
           companyLogo="/precast_images/1.webp"
           projectImages={images}
-        />
-        
-        <ProjectDetailCard
+        /> */}
+
+        {/* <ProjectDetailCard
           projectType="Ongoing project "
           projectTitle="The sustainable City Abu Dhabi, Yas Island.."
           clientName="Aldar Properties L.L.C and Diamond Developers."
@@ -287,8 +298,8 @@ const Precast = () => {
           mainConstructor="Jeet MEP."
           companyLogo="/precast_images/1.webp"
           projectImages={[]}
-        />
-        <ProjectDetailCard
+        /> */}
+        {/* <ProjectDetailCard
           projectType="completed projects"
           projectTitle="BThe sustainable City Abu Dhabi, Yas Island.."
           clientName="Aldar Properties L.L.C and Diamond Developers."
@@ -307,10 +318,10 @@ const Precast = () => {
           mainConstructor="HK Advance EMW L.L.C"
           companyLogo="/precast_images/1.webp"
           projectImages={[]}
-        />
+        /> */}
       </div>
       <ClientSection />
-      <Footer /> 
+      <Footer />
     </section>
   );
 };

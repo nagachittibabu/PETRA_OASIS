@@ -2,26 +2,23 @@
 import Image from 'next/image'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import React, { useEffect, useState } from 'react'
-import Header from '../components/header';
+import  { useEffect, useState } from 'react'
 import ClientSection from '../components/clientSection';
 import Footer from '../components/footer';
 
 const categories = [
-  { name: "workers", imageurl: "/images/wrench.png" },
-  { name: "plumbers", imageurl: "/images/wrench.png" },
-  { name: "Enginners", imageurl: "/images/wrench.png" },
-  { name: "Supervisors", imageurl: "/images/wrench.png" },
-  { name: "Technitions", imageurl: "/images/wrench.png" },
+  { name: "Helpers", imageurl: "/images/helpersquoteimage.jpg" },
+  { name: "plumbers", imageurl: "/images/electricalquoteimage.jpg" },
+  { name: "Enginners", imageurl: "/images/ductingquoteimage.jpg" },
+  { name: "Supervisors", imageurl: "/images/mechanicalquoteimage.jpg" },
 ]
 
-const subCategories = [
-  "heasdfsasdfasdfasdfasfsdfdsfgadgfdafllo", "helasdfasdflo", "heasdfllo", "asdfello", "hello",
-  "hasdfllo", "helasdflo", "helsdflo", "helasdffassdflo", "hasdfello",
-]
+const subCategories = [["Helpers"],["Electrician","Helper"],["Helper","Ducting Helper"],["Helper","Plumbing"]]
 
 const ReachUspage = () => {
   const [categoryClick, setCategoryClick] = useState(false);
+  const [subCategory,setSubCategory]=useState(0);
+  const [clickedCategory,SetClickedCategory]=useState(0);
   const [quantities, setQuantities] = useState(Array(subCategories.length).fill(0));
   const [selectedItems, setSelectedItems] = useState<{ name: string; quantity: number }[]>([]);
   const [getCodeSubmit,setGetCodeSubmit] =useState(false)
@@ -34,69 +31,76 @@ const ReachUspage = () => {
     });
   }, []);
 
-  const categoryhandle = (e: React.MouseEvent<HTMLElement>, name:string) => {
-    e.preventDefault()
-    setCategoryClick(true)
+  const categoryhandle = (e:number) => {
+    setSubCategory(e)
+    setCategoryClick(true);
+    SetClickedCategory(e)
   }
 
-  const handleChange = () => {
-  }
-
-  const handleIncrement = (index:number) => {
-    const newQuantities = [...quantities]
-    newQuantities[index]++
-    setQuantities(newQuantities)
-    updateSelectedItems(index, newQuantities[index])
-
-  }
-
-  const handleDecrement = (index:number) => {
-    const newQuantities = [...quantities]
-    newQuantities[index] = Math.max(0, newQuantities[index] - 1)
-    setQuantities(newQuantities)
-    updateSelectedItems(index, newQuantities[index])
-
-  }
-  const updateSelectedItems = (index:number, quantity:number) => {
-    const name = subCategories[index]
-    setSelectedItems((prev) => {
-      const exists = prev.find((item) => item.name === name)
-      if (quantity === 0) {
-        return prev.filter((item) => item.name !== name)
-      } else if (exists) {
-        return prev.map((item) =>
-          item.name === name ? { ...item, quantity } : item
-        )
-      } else {
-        return [...prev, { name, quantity }]
+  const handleIncrement = (index: number) => {
+    const updatedQuantities = [...quantities];
+    updatedQuantities[index] += 1;
+    setQuantities(updatedQuantities);
+  
+    const itemName = filterSubCategories[0][index];
+    const existingIndex = selectedItems.findIndex(item => item.name === itemName);
+  
+    if (existingIndex !== -1) {
+      const updatedItems = [...selectedItems];
+      updatedItems[existingIndex].quantity = updatedQuantities[index];
+      setSelectedItems(updatedItems);
+    } else {
+      setSelectedItems([...selectedItems, { name: itemName, quantity: 1 }]);
+    }
+  };
+  
+  const handleDecrement = (index: number) => {
+    const updatedQuantities = [...quantities];
+    if (updatedQuantities[index] > 0) {
+      updatedQuantities[index] -= 1;
+      setQuantities(updatedQuantities);
+  
+      const itemName = filterSubCategories[0][index];
+      const existingIndex = selectedItems.findIndex(item => item.name === itemName);
+  
+      if (existingIndex !== -1) {
+        const updatedItems = [...selectedItems];
+        if (updatedQuantities[index] === 0) {
+          updatedItems.splice(existingIndex, 1);
+        } else {
+          updatedItems[existingIndex].quantity = updatedQuantities[index];
+        }
+        setSelectedItems(updatedItems);
       }
-    })
-  }
+    }
+  };
 
-  const handleRemove = (name:string) => {
-    const index = subCategories.indexOf(name)
-    const newQuantities = [...quantities]
-    newQuantities[index] = 0
-    setQuantities(newQuantities)
-    setSelectedItems((prev) => prev.filter((item) => item.name !== name))
-  }
+  const handleRemove = (name: string) => {
+    const indexToReset = filterSubCategories[0].findIndex(item => item === name);
+    if (indexToReset !== -1) {
+      const updated = [...quantities];
+      updated[indexToReset] = 0;
+      setQuantities(updated);
+      const updatedItems = selectedItems.filter(item => item.name !== name);
+    setSelectedItems(updatedItems);
+
+    }
+  };
 
 
+  const filterSubCategories = subCategories.filter((item, index) => index === clickedCategory);
 
-
-  console.log(selectedItems);
-
+  
   return (
-    <div className='w-full h-full flex items-center justify-center  flex-col space-y-2  border bg-blue-50'>
-      <Header />
+    <div className='w-full h-full flex items-center justify-center  flex-col space-y-4  border bg-orange-50'>
       {!categoryClick && (
-      <div className='font-bold text-[22px] xl:text-[35px] lg:text-[32px] md:text-[28px] sm:text-[22px] slide-up py-12'>SELECT YOUR CATEGORY</div>
+      <div className='font-bold text-[22px] xl:text-[35px] lg:text-[32px] md:text-[28px] sm:text-[22px] slide-up py-4'>SELECT YOUR CATEGORY</div>
       ) }
       {!categoryClick && (
-      <div className='w-[95%] h-max   flex flex-wrap xl:gap-4 lg:gap-2 gap-10 items-center justify-center  rounded-lg shadow-lg bg-white py-10'>
+      <div className='w-[95%] h-max   flex flex-wrap xl:gap-8 lg:gap-8 gap-10 items-center justify-center  rounded-lg shadow-lg bg-white py-10'>
         {categories.map((item, index) => (
-          <div className='xl:w-[30%] lg:w-[32%] md:w-[44%] sm:w-[45%] w-[90%] rounded-2xl shadow-lg border border-gray-200  h-[400px] flex items-center justify-center flex-col p-4 transform transition duration-300 hover:scale-102 hover:shadow-2xl  hover:shadow-orange-100 cursor-pointer' key={index} data-aos="fade-up" data-aos-delay={index * 100}>
-            <div className='w-[90%] h-[80%] relative' onClick={(e) => categoryhandle(e, item.name)}>
+          <div className='xl:w-[40%] lg:w-[32%] md:w-[44%] sm:w-[45%] w-[90%] rounded-2xl shadow-lg border border-gray-200  h-[400px] flex items-center justify-center flex-col p-4 transform transition duration-300 hover:scale-102 hover:shadow-2xl  hover:shadow-orange-100 cursor-pointer' key={index} data-aos="fade-up" data-aos-delay={index * 100}>
+            <div className='w-[90%] h-[80%] relative' onClick={(e) => categoryhandle(index)}>
               <Image src={item.imageurl} fill alt="image" className='object-cover' />
             </div>
             <div className='w-full h-[10%] text-center flex items-center justify-center text-[25px] font-semibold'>{item.name}</div>
@@ -106,11 +110,14 @@ const ReachUspage = () => {
       )}
       {categoryClick && !getCodeSubmit && (
         <div className='w-full h-max   z-10 bg-white slide-down flex justify-center items-center flex-col xl:flex-row lg:flex-row md:flex-row  sm:flex-col space-y-4 py-10'>
-          <div className="cursor-pointer text-[40px] text-blue-900 h-min absolute  top-0 left-10 " onClick={()=>{setCategoryClick(false);setSelectedItems([]);setQuantities(Array(subCategories.length).fill(0))}} ><i className='bx bx-left-arrow-alt'></i></div>
+          <div className="cursor-pointer text-[40px] text-blue-900 h-min absolute  top-0 left-10 " onClick={() => {
+            setCategoryClick(false); setSelectedItems([]); setSelectedItems([]);
+            setQuantities(Array(subCategories[clickedCategory].length).fill(0));
+          }} ><i className='bx bx-left-arrow-alt'></i></div>
           <div className='w-[90%] xl:w-1/2 lg:w-[55%] md:w-[50%] sm:w-[80%] h-[500px]  flex items-center justify-center '>
             <div className='w-[90%] h-full  flex items-center justify-center rounded-lg shadow-xl  '>
               <ul className='w-[90%] h-[90%] overflow-scroll list-disc pl-1 '>
-                {subCategories.map((item, index) => (
+                {filterSubCategories[0].map((item, index) => (
                   <li className='w-full h-[50px]  flex items-center justify-center gap-4' key={index}>
                     <h1 className='truncate font-medium text-gray-800 w-1/2'>{item}</h1>
                     <div className="w-1/3 flex items-center gap-2">
@@ -123,7 +130,7 @@ const ReachUspage = () => {
                       <input
                         type="text"
                         value={quantities[index]}
-                        onChange={(e) => handleChange}
+                        readOnly
                         className="w-16 text-center border py-1 rounded "
                       />
                       <button
