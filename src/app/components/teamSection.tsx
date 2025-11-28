@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
 const teamMembers = [
-  { "name": "Member1", "imageurl": "/images/personImage.png", "specialization": "POST GRADUATE" ,"contactemail":"info@petraoasis.com"},
-  { "name": "Member2", "imageurl": "/images/personImage.png", "specialization": "POST GRADUATE","contactemail":"info@petraoasis.com"} ,
-  { "name": "Member3", "imageurl": "/images/personImage.png", "specialization": "POST GRADUATE","contactemail":"info@petraoasis.com"} 
+  { "name": "Member1", "imageurl": "/images/personImage.jpg", "specialization": "POST GRADUATE" ,"contactemail":"info@petraoasis.com"},
+  { "name": "Member2", "imageurl": "/images/personImage.jpg", "specialization": "POST GRADUATE","contactemail":"info@petraoasis.com"} ,
+  { "name": "Member3", "imageurl": "/images/personImage.jpg", "specialization": "POST GRADUATE","contactemail":"info@petraoasis.com"} 
 ]
 const TeamSection = () => {
   return (
