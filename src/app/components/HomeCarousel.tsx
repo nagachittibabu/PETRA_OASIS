@@ -51,7 +51,7 @@ const HomeCarousel = () => {
           </h1>
 
           <h2 className="text-xs sm:text-sm md:text-lg lg:text-xl font-bold bg-gradient-to-r from-blue-400 via-blue-500 to-blue-300 bg-clip-text text-transparent tracking-[2px] sm:tracking-[4px]">
-          Together We Grow, Together We Achieve.
+          Together We Grow - Together We Achieve
           </h2>
         </div>
       </div>
