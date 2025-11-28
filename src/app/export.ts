@@ -131,30 +131,25 @@ export const corevalues = [
     {
         'image': '/images/mission.png',
         'title': 'Our Mission',
-        'about': 'At Petra Oasis, our mission is to provide innovative and world-class solutions through the best people, processes, and systems. We are committed to partnership, exceptional service, and delivering projects on time and within budget with the highest levels of quality and attention to detail.'
+        'about': 'At Petra Oasis, our mission is to deliver reliable manpower supply services along with professional electrical and plumbing solutions. We focus on providing skilled workforce, ensuring safe installations, and maintaining high-quality service across all projects.'
     },
     {
-        'image': '/images/house.png',
-        'title': 'Residential',
-        'about': 'Petra Oasis specializes in residential construction, offering homes, apartments, and living spaces built with precision and efficiency. Timeliness, value-per-square-foot, and customer satisfaction are at the core of our efforts.',
-        'points': [
-            "Foster a professional and ethical work environment.",
-            "Set safety and quality as our top priorities.",
-            "Encourage creativity and innovation in every aspect of our work.",
-            "Recognize the value of continuous improvement.",
-            "Be open, listen to our customers, and adapt to change."
-        ]
-    },
+        image: '/images/person.jpg',
+        title: 'Our Strength',
+        about:
+          'Petra Oasis proudly operates with a team of 600 highly skilled employees, delivering expert manpower, electrical, and plumbing services for residential projects. From precision wiring to seamless plumbing installations and maintenance, our workforce ensures efficient, timely, and cost-effective',
+      },
     {
         'image': '/images/experience.jpeg',
         'title': 'Experience',
-        'about': 'Established in 2015 in Sharjah, UAE, Petra Oasis has built a strong reputation as one of the leading MEP & Civil contracting companies in the region. With years of expertise, we have successfully delivered residential, commercial, and industrial projects with excellence and reliability.'
+        'about': 'Established in 2015, Petra Oasis has built a strong reputation in manpower supply, electrical work, and plumbing services across the UAE. Our experienced team has successfully completed numerous residential, commercial, and industrial projects with professionalism and quality.'
     },
     {
         'image': '/images/safety.png',
         'title': 'Safety',
-        'about': 'Safety is embedded in Petra Oasis’s culture from top to bottom. We follow all rules and regulations rigorously, ensuring zero incidents across our projects. “Safety First” is not just a slogan but a guiding principle for every employee and every site we operate.'
+        'about': 'Safety is a key part of Petra Oasis culture. All manpower, electrical, and plumbing activities are performed following strict safety regulations. We ensure safe workplaces through proper training, supervision, and compliance with industry standards.'
     }
+    
 ]
 
 export const projects = [
@@ -167,32 +162,32 @@ export const projects = [
     },
     {
         'image': '/images/residential.png',
-        'video': '/videos/commercialVideo.mp4',
+        'video': '/videos/residentialVideo.mp4',
         'title': 'Residential',
         'about': 'Residential construction involves building homes, apartments, and other dwellings. It’s a dynamic industry shaping our living spaces globally.'
     },
     {
         'image': '/images/industrial.png',
-        'video': '/videos/commercialVideo.mp4',
+        'video': '/videos/industrialVideo.mp4',
         'title': 'Industrial',
         'about': 'Industrial properties cater to manufacturing, warehousing, and logistics needs Examples: factories, distribution centers, and industrial parks.'
     },
     {
         'image': '/images/educational.png',
-        'video': '/videos/commercialVideo.mp4',
+        'video': '/videos/schoolVideo.mp4',
         'title': 'Educational',
         'about': 'Educational properties serve learning institutions. Examples: schools, colleges, and universities.'
 
     },
     {
         'image': '/images/hospital.png',
-        'video': '/videos/commercialVideo.mp4',
+        'video': '/videos/hospitalityVideo.mp4',
         'title': 'Hospitality',
         'about': 'Hospitality properties provide lodging, dining, and leisure services. Examples: hotels, restaurants, and resorts.'
     },
     {
         'image': '/images/medical.png',
-        'video': '/videos/commercialVideo.mp4',
+        'video': '/videos/hospitalVideo.mp4',
         'title': 'Medical',
         'about': 'Medical properties support healthcare services. Examples: hospitals, clinics, and medical office buildings.'
     }
