@@ -75,7 +75,7 @@ const ProjectSection = () => {
                     <div className="w-full xl:w-3/5 p-4 order-1 xl:order-2">
                         <div className="relative w-full aspect-[16/9] rounded-lg shadow-2xl overflow-hidden">
                             <Image 
-                                src="/images/companybanner.png" 
+                                src="/images/clientsatisfaction.jpg" 
                                 alt="customers" 
                                 fill 
                                 className="object-cover"
