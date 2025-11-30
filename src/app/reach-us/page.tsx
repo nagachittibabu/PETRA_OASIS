@@ -5,19 +5,18 @@ import 'aos/dist/aos.css';
 import  { useEffect, useState } from 'react'
 import ClientSection from '../components/clientSection';
 import Footer from '../components/footer';
-
 const categories = [
-  { name: "Helpers", imageurl: "/images/helpersquoteimage.jpg" },
+  {name:'Technicians',imageurl:'/images/technicians.jpg'},
   { name: "Plumbers", imageurl: "/images/electricalquoteimage.jpg" },
-  { name: "Electricians", imageurl: "/images/ductingquoteimage.jpg" },
-  { name: "Ductors", imageurl: "/images/mechanicalquoteimage.jpg" },
+  { name: "Electricians", imageurl: "/images/mechanicalquoteimage.jpg" },
+  { name: "Ductors", imageurl: "/images/ductingquoteimage.jpg" },
+  { name: "Helpers", imageurl: "/images/helpersquoteimage.jpg" },
 ]
 
-const subCategories = [["Helpers"],["Plumber","Helper"],["Electrician","Helper"],["Ductors","Helper"]]
+const subCategories = [['Electrician','Plumber','Ductors','Helper'],["Plumber","Helper"],["Electrician","Helper"],["Ductors","Helper"],["Helpers"],]
 
 const ReachUspage = () => {
   const [categoryClick, setCategoryClick] = useState(false);
-  const [subCategory,setSubCategory]=useState(0);
   const [clickedCategory,SetClickedCategory]=useState(0);
   const [quantities, setQuantities] = useState(Array(subCategories.length).fill(0));
   const [selectedItems, setSelectedItems] = useState<{ name: string; quantity: number }[]>([]);
@@ -32,7 +31,6 @@ const ReachUspage = () => {
   }, []);
 
   const categoryhandle = (e:number) => {
-    setSubCategory(e)
     setCategoryClick(true);
     SetClickedCategory(e)
   }
@@ -99,7 +97,7 @@ const ReachUspage = () => {
       {!categoryClick && (
       <div className='w-[95%] h-max   flex flex-wrap xl:gap-8 lg:gap-8 gap-10 items-center justify-center  rounded-lg shadow-lg bg-white py-10'>
         {categories.map((item, index) => (
-          <div className='xl:w-[40%] lg:w-[32%] md:w-[44%] sm:w-[45%] w-[90%] rounded-2xl shadow-lg border border-gray-200  h-[400px] flex items-center justify-center flex-col p-4 transform transition duration-300 hover:scale-102 hover:shadow-2xl  hover:shadow-orange-100 cursor-pointer' key={index} data-aos="fade-up" data-aos-delay={index * 100}>
+          <div className={`${index===0? 'w-[90%] xl:w-[80%] lg:w-[80%] md:w-[80%] sm:w-[80%]':'xl:w-[40%] lg:w-[32%] md:w-[44%] sm:w-[45%] w-[90%]'}  rounded-2xl shadow-lg border border-gray-200  h-[400px] flex items-center justify-center flex-col p-4 transform transition duration-300 hover:scale-102 hover:shadow-2xl  hover:shadow-orange-100 cursor-pointer`} key={index} data-aos="fade-up" data-aos-delay={index * 100}>
             <div className='w-[90%] h-[80%] relative' onClick={(e) => categoryhandle(index)}>
               <Image src={item.imageurl} fill alt="image" className='object-cover' />
             </div>
