@@ -142,6 +142,16 @@ export const corevalues = [
         'about':
           'Petra Oasis proudly operates with a team of 600 highly skilled employees, delivering expert manpower, electrical, and plumbing services for residential projects. From precision wiring to seamless plumbing installations and maintenance, our workforce ensures efficient, timely, and cost-effective',
       },
+      {
+        'image': '/images/house.png',
+        'title': 'Worker Accommodation',
+        'about': 'We provide comfortable and well-maintained accommodation facilities for our workforce. With secure housing, essential amenities, and proximity to project sites, Petra Oasis ensures that employees remain rested, healthy, and focused on delivering quality service.'
+      },
+      {
+        'image': '/images/bus.png',
+        'title': 'Worker Transportation',
+        'about': 'Petra Oasis ensures reliable transportation for all workers, providing safe and timely pick-up and drop-off services to project locations. This guarantees punctuality, reduces travel stress, and supports smooth project execution across sites.'
+      },
     {
         'image': '/images/experience.jpeg',
         'title': 'Experience',
@@ -372,3 +382,14 @@ export const ongoingProjects: CompanyProjects[] = [
     { "name": "Member2", "imageurl": "/images/personImage.jpg", "specialization": "POST GRADUATE","contactemail":"info@petraoasis.com"} ,
     { "name": "Member3", "imageurl": "/images/personImage.jpg", "specialization": "POST GRADUATE","contactemail":"info@petraoasis.com"} 
   ]
+
+
+  export  let groups = [
+    {"title":"PETRA OASIS","caption":"ELECTROMECHANICAL WORKS","image":"/images/companylogo.png"},
+    {"title":"SAQIR AL PETRA","caption":"PLASTER | TILES | PAINTS | CONT.","image":"/images/companylogo.png"},
+    {"title":"PETRA OASIS","caption":"TECHNICAL CONTRACTING","image":"/images/companylogo.png"},
+    {"title":"SAQIR AL PETRA","caption":"TECHNICAL SERVICES L.L.C","image":"/images/companylogo.png"},
+    {"title":"","caption":"PETRA FALCON TECHNICAL SERVICES L.L.C","image":"/images/companylogo.png"},
+    {"title":"SAQIR LIWA","caption":"ELECTROMECHANICAL WORKS L.L.C","image":"/logos/logos/saqir.jpeg"},
+    {"title":"","caption":"PETRA ELITE ELECTROMECHANICAL WORKS  L.L.C","image":"/images/companylogo.png"},
+    ]
