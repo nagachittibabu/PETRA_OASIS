@@ -7,40 +7,39 @@ interface ProjectCardProps {
     title: string;
     description: string;
     video: string;
+    index:number;
 }
 
-const ProjectSectionCard: React.FC<ProjectCardProps> = ({ imageurl, title, description, video }) => {
+const ProjectSectionCard: React.FC<ProjectCardProps> = ({ imageurl, title, description, video,index }) => {
     return (
-        <div className='relative w-full h-[350px] sm:h-[400px] rounded-xl overflow-hidden shadow-xl group cursor-pointer'>
-            
+        <div className={`${index%2===0 ? 'flex-row':'flex-row-reverse'} w-full h-[350px] flex sm:h-[400px] rounded-xl overflow-hidden shadow-xl  cursor-pointer hover:shadow-orange-200 projectCard`}>
+            <div className='xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-1/2 w-full  h-[90%] items-center flex justify-center '>
+                <div className='w-[90%] h-[80%] rouded-lg overdlow-hidden'>
             <video 
                 src={video} 
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full rounded-xl"
                 autoPlay
                 loop
                 muted
-                playsInline
-                onMouseEnter={(e) => e.currentTarget.play()}
-                onMouseLeave={(e) => e.currentTarget.pause()}
             />
-            
-            <div className='absolute inset-0 bg-black/40 transition-colors duration-300 group-hover:bg-black/60 flex flex-col justify-end p-6'>
+            </div>
+            </div>
+            <div className='xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-1/2 w-[95%] h-[90%] flex flex-col justify-center pl-4  xl:pl-12 lg:pl-12 md:pl-10 sm:pl-8 '>
                 
-                <div className='mb-4 w-12 h-12 relative'>
+                <div className='w-16 xl:w-22 lg:w-22 md:w-22 sm:w-22 h-20 xl:h-28 lg:h-28 md:h-28 sm:h-28  relative'>
                     <Image 
                         src={imageurl} 
                         alt={`${title} icon`} 
-                        width={48} 
-                        height={48} 
-                        className="object-contain"
+                        fill
+                        className="object-cover"
                     />
                 </div>
 
-                <h2 className='text-2xl font-bold text-white mb-2 leading-tight'>
+                <h2 className='text-2xl font-bold text-gray-900 mb-2 leading-tight'>
                     {title}
                 </h2>
                 
-                <p className='text-sm text-gray-200 opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100'>
+                <p className='text-sm text-gray-800 opacity-100'>
                     {description}
                 </p>
 
