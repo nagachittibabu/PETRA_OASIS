@@ -20,7 +20,7 @@ const CoreValueSection = () => {
     return (
         <section
             id="core-values"
-            className="w-full bg-gradient-to-b from-gray-50 to-white py-20 sm:py-28 h-max xl:h-[700px] lg:h-[1200px] md:h-[1100px]  sm:h-max "
+            className="w-full bg-gradient-to-b from-gray-50 to-white py-20 sm:py-28 h-max "
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div>
@@ -34,14 +34,12 @@ const CoreValueSection = () => {
                 <div
                     data-aos="fade-up"
                     data-aos-delay="200"
-                    className="
-                        grid gap-10 xl:grid-cols-4 sm:gap-14 
-                        sm:grid-cols-2 lg:grid-cols-4 
+                    className="grid gap-10 xl:grid-cols-3 sm:gap-14 sm:grid-cols-2 lg:grid-cols-3  
                     "
                 >
                     {corevalues.map((item, index) => (
                         <div
-                            key={item.title}
+                            key={index}
                             data-aos="fade-up"
                             data-aos-delay={200 + index * 120}
                             className="h-full"
