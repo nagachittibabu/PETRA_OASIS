@@ -8,12 +8,12 @@ import Footer from '../components/footer';
 
 const categories = [
   { name: "Helpers", imageurl: "/images/helpersquoteimage.jpg" },
-  { name: "plumbers", imageurl: "/images/electricalquoteimage.jpg" },
-  { name: "Enginners", imageurl: "/images/ductingquoteimage.jpg" },
-  { name: "Supervisors", imageurl: "/images/mechanicalquoteimage.jpg" },
+  { name: "Plumbers", imageurl: "/images/electricalquoteimage.jpg" },
+  { name: "Electricians", imageurl: "/images/ductingquoteimage.jpg" },
+  { name: "Ductors", imageurl: "/images/mechanicalquoteimage.jpg" },
 ]
 
-const subCategories = [["Helpers"],["Electrician","Helper"],["Helper","Ducting Helper"],["Helper","Plumbing"]]
+const subCategories = [["Helpers"],["Plumber","Helper"],["Electrician","Helper"],["Ductors","Helper"]]
 
 const ReachUspage = () => {
   const [categoryClick, setCategoryClick] = useState(false);
