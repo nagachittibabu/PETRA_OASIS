@@ -50,7 +50,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`${pathname==="/" ? "absolute":""} w-full h-[100px] flex flex-col  items-center justify-center  border-b border-gray-50 shadow-sm shadow-gray-50`}>
+    <header className={`${pathname==="/" ? "absolute":""} w-full h-[100px] flex flex-col  items-center justify-center  border-b border-gray-900 shadow-sm shadow-gray-50 `}>
       <div className="w-full h-full flex justify-between items-center px-2 xl:px-4 lg:px-4 ">
         <div className="w-3/4 xl:w-1/4 lg:w-1/4 md:w-1/4 sm:w-3/4 flex items-center justify-start xl:justify-center lg:justify-center   ">
           <Link href={"/"}>
@@ -164,9 +164,17 @@ const Header = () => {
               <li style={{ "--delay": "1.4s" } as React.CSSProperties}>
                 <Link href={"/contact-us"} onClick={closeNavOnClick} className="hover:text-orange-400">CONTACT US</Link>
               </li>
-              <button className="slide-left w-max border p-3  shadow-md hover:bg-blue-400 bg-orange-400 rounded-xl ">
-          <Link href={"/reach-us"} className="text-white w-full h-full " onClick={closeNavOnClick}>REQUEST A QUOTE </Link>
-        </button>
+              <button className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-orange-400 to-orange-500 px-6 py-3 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <Link
+                  href="/reach-us"
+                  onClick={closeNavOnClick}
+                  className="relative z-10 text-sm font-semibold tracking-wide text-white"
+                >
+                  REQUEST A QUOTE
+                </Link>
+                {/* subtle animated overlay */}
+                <span className="absolute inset-0 bg-blue-400 opacity-0 transition-opacity duration-300 group-hover:opacity-20"></span>
+              </button>
             </ul>
           </nav>
         )}        

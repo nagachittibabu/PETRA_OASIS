@@ -33,7 +33,7 @@ const ProjectSection = () => {
                 </div>
 
                 <div
-                    className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3" 
+                    className="grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 md:grid-cols-1 " 
                 >
                     {projects.map((item, i) => (
                         <div 
@@ -46,13 +46,14 @@ const ProjectSection = () => {
                                 title={item.title} 
                                 description={item.about} 
                                 video={item.video} 
+                                index={i}
                             />
                         </div>
                     ))}
                 </div>
             </div>
             
-            <div className="max-w-7xl mx-auto mt-20 md:mt-32 px-4 sm:px-6 lg:px-8 bg-gray-50 border-t border-b border-gray-200">
+            <div className="max-w-7xl mx-auto mt-20 md:mt-32 px-4 sm:px-6 lg:px-8 bg-gray-50 border-t border-b border-gray-200"  data-aos="fade-up">
                 <div className="flex flex-col xl:flex-row items-center py-10 md:py-16">
                     <div className="w-full xl:w-2/5 p-4 order-2 xl:order-1">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center xl:text-left"> 
@@ -72,7 +73,7 @@ const ProjectSection = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="w-full xl:w-3/5 p-4 order-1 xl:order-2">
+                    <div className="slide-up w-full xl:w-3/5 p-4 order-1 xl:order-2">
                         <div className="relative w-full aspect-[16/9] rounded-lg shadow-2xl overflow-hidden">
                             <Image 
                                 src="/images/clientsatisfaction.jpg" 

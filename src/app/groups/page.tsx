@@ -19,7 +19,7 @@ const GroupsPage = () => {
       }, []);
 
     const groupsRef = useRef<HTMLDivElement>(null);
-    let groups = [{"title":"PETRA OASIS","caption":"ELECTROMECHANICAL WORKS","image":"/images/logopng.png"},{"title":"SAQIR AL PETRA","caption":"PLASTER | TILES | PAINTS | CONT.","image":"/images/logopng.png"},{"title":"PETRA OASIS","caption":"TECHNICAL CONTRACTING","image":"/images/logopng.png"},{"title":"SAQIR AL PETRA","caption":"TECHNICAL SERVICES L.L.C","image":"/images/logopng.png"},{"title":"","caption":"PETRA FALCON TECHNICAL SERVICES L.L.C","image":"/images/logopng.png"}]
+    let groups = [{"title":"PETRA OASIS","caption":"ELECTROMECHANICAL WORKS","image":"/images/companylogo.png"},{"title":"SAQIR AL PETRA","caption":"PLASTER | TILES | PAINTS | CONT.","image":"/images/companylogo.png"},{"title":"PETRA OASIS","caption":"TECHNICAL CONTRACTING","image":"/images/companylogo.png"},{"title":"SAQIR AL PETRA","caption":"TECHNICAL SERVICES L.L.C","image":"/images/companylogo.png"},{"title":"","caption":"PETRA FALCON TECHNICAL SERVICES L.L.C","image":"/images/companylogo.png"}]
     return (
         <div className='w-full h-full flex flex-col flex-wrap justify-center items-center space-y-4'  >
             <h1 className='text-[30px] font-bold bg-gradient-to-r from-orange-500 via-orange-400 to-blue-300 bg-clip-text text-transparent'>OUR GROUPS</h1>

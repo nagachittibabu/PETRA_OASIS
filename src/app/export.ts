@@ -61,49 +61,52 @@ export interface Service {
 }
 
 export const services: Service[] = [
-    {
-        title: "Mechanical (HVAC & Refrigeration)",
-        about: "Expertise in complex climate control and air handling systems.",
-        video: "/videos/mechanicalVideo.mp4",
-        points: [
-            "Heating, Ventilation & Air Conditioning (HVAC) System installation and maintenance.",
-            "All types of Air Conditioning Systems (Centralized, Wall-Mounted, Split, Ducted).",
-            "Chilled water system, chiller plants, cooling towers, FAU, AHU, FCU installation.",
-            "Refrigeration and low-temperature projects.",
-            "Duct Works, Insulation, and Installation.",
-            "Specialized Ventilation Systems (e.g., car park, exhaust).",
-            "Inspection, Surveys, and Comprehensive Reports of existing installations."
-        ]
-    },
-    {
-        title: "Ducting & Drainage",
-        about: "Complete solutions for water, drainage, and utility piping systems.",
-        video: "/videos/ductingVideo.mp4", 
-        points: [
-            "Design & Installation of plumbing, drainage, and sanitary systems.",
-            "Pump, Tank, and Booster System Installation (Potable Water & Firefighting).",
-            "Complete Internal and External Piping Works (UPVC, PPR, Copper).",
-            "Sanitary wares fixing and associated piping.",
-            "Sewage Treatment Plants (STP) and Grease Trap installations.",
-            "Water Treatment Plants and Filtration systems.",
-            "Testing and Commissioning of all water and drainage networks."
-        ]
-    },
-    {
-        title: "Electrical",
-        about: "High-level execution of power distribution and smart building systems.",
-        video: "/videos/electricalVideo.mp4",
-        points: [
-            "Electrical Engineering design, load calculation, and product selection.",
-            "Installations of Electrical Panel Systems (MDBs, SMDBs, DBs, Capacitor Banks).",
-            "Building Management System (BMS) Installation and integration.",
-            "Busbar Riser System Installation and power distribution.",
-            "Cable Laying, Cable Tray, and Termination Works.",
-            "Electrical Containment Systems (Conduits, Trunking).",
-            "Low Current Systems (Data, CCTV, Access Control) & Low Voltage (LV) Systems.",
-            "Complete Power Distribution and Earthing Systems."
-        ]
-    }
+        {
+          "title": "Mechanical (Industrial Systems)",
+          "about": "Expertise in heavy-duty mechanical systems for industrial and infrastructure projects.",
+          "video": "/videos/mechanicalVideo.mp4",
+          "points": [
+            "Heating, Ventilation & Air Conditioning (HVAC) System",
+            "All type of Air Conditioning System (Centralized",
+            "Wall-Mounted, Split System, CC, Ducted",
+            "Chilled water system, chiller plants, cooling towers, FAU, AHU, FCU",
+            "Refrigeration and low temperature projects",
+            "Duct Works & Installation",
+            "Ventilation Systems",
+            "Inspection, Surveys & Reports of Existing Installations"
+          ]
+        },
+        {
+            "title": "Plumbing & Piping",
+            "about": "Comprehensive solutions for building water supply, sanitary systems, and utility piping networks.",
+            "video": "/videos/ductingVideo.mp4",
+            "points": [
+              "Design & Installation of plumbing, drainage and  sanitary systems.",
+              "Pump & Tank Installation",
+              "Complete Piping Works.",
+              "Sanitary wares fixing.",
+              "Sewage Treatment Plants.",
+              "Water Treatment Plants.",
+              "Potable Water Booster Systems.",
+              "Testing and Commissioning."
+            ]
+          },          
+        {
+          "title": "Electrical",
+          "about": "High-level execution of power distribution and smart building systems.",
+          "video": "/videos/electricalVideo.mp4",
+          "points": [
+            "Electrical Engineering (Design & Product Selection) ",
+            "Installations of Electrical Panel Systems like MDBs,",
+            "Panels, SMDBs, DBs / Capacitor Banks",
+            "BMS Installation",
+            "Busbar System Installation",
+            "Cable Laying & Termination Works",
+            "Electrical Containment Systems",
+            "Low Current System & Low Voltage System",
+            "Power Distribution"
+          ]
+        }
 ];
 
 export const ourpromises = [
@@ -120,10 +123,10 @@ export const ourpromises = [
         'label': 'Read More'
       },
       {
-        'image': '/images/ductingquoteimage.jpg',
-        'title': 'Innovative Design & Implementation',
-        'description': 'Our team collaborates with engineers, supervisors, and contractors to deliver ducting, plumbing, and HVAC solutions that align with regional codes and sustainability goals. Petra Oasis integrates design with execution to achieve seamless, compliant, and future-ready systems.',
-        'label': 'Read More'
+        "image": "/images/ductingquoteimage.jpg",
+        "title": "Our Excellent Team",
+        "description": "We collaborate with a workforce of over 600 highly skilled professionals, delivering expert electrical and plumbing services for residential projects. From precision wiring to seamless plumbing installations and ongoing maintenance, our team ensures efficiency, timeliness, and cost-effectiveness at every stage.",
+        "label": "Read More"
       }
 ]
 
@@ -134,9 +137,9 @@ export const corevalues = [
         'about': 'At Petra Oasis, our mission is to deliver reliable manpower supply services along with professional electrical and plumbing solutions. We focus on providing skilled workforce, ensuring safe installations, and maintaining high-quality service across all projects.'
     },
     {
-        image: '/images/person.jpg',
-        title: 'Our Strength',
-        about:
+        'image': '/images/person.jpg',
+        'title': 'Our Strength',
+        'about':
           'Petra Oasis proudly operates with a team of 600 highly skilled employees, delivering expert manpower, electrical, and plumbing services for residential projects. From precision wiring to seamless plumbing installations and maintenance, our workforce ensures efficient, timely, and cost-effective',
       },
     {
@@ -362,3 +365,10 @@ export const ongoingProjects: CompanyProjects[] = [
     },
 
 ];
+
+
+ export const teamMembers = [
+    { "name": "Member1", "imageurl": "/images/personImage.jpg", "specialization": "POST GRADUATE" ,"contactemail":"info@petraoasis.com"},
+    { "name": "Member2", "imageurl": "/images/personImage.jpg", "specialization": "POST GRADUATE","contactemail":"info@petraoasis.com"} ,
+    { "name": "Member3", "imageurl": "/images/personImage.jpg", "specialization": "POST GRADUATE","contactemail":"info@petraoasis.com"} 
+  ]
