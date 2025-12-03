@@ -97,7 +97,7 @@ const ReachUspage = () => {
       {!categoryClick && (
       <div className='w-[95%] h-max   flex flex-wrap xl:gap-8 lg:gap-8 gap-10 items-center justify-center  rounded-lg shadow-lg bg-white py-10'>
         {categories.map((item, index) => (
-          <div className={`${index===0? 'w-[90%] xl:w-[80%] lg:w-[80%] md:w-[80%] sm:w-[80%]':'xl:w-[40%] lg:w-[32%] md:w-[44%] sm:w-[45%] w-[90%]'}  rounded-2xl shadow-lg border border-gray-200  h-[400px] flex items-center justify-center flex-col p-4 transform transition duration-300 hover:scale-102 hover:shadow-2xl  hover:shadow-orange-100 cursor-pointer`} key={index} data-aos="fade-up" data-aos-delay={index * 100}>
+          <div className={`${index===0? 'w-[90%] xl:w-[80%] lg:w-[80%] md:w-[80%] sm:w-[80%]':'xl:w-[40%] lg:w-[32%] md:w-[44%] sm:w-[45%] w-[90%]'}  rounded-2xl shadow-lg border border-gray-200  h-[400px] flex items-center justify-center flex-col p-4 transform transition duration-300 hover:scale-102 hover:shadow-2xl  hover:shadow-blue-200 cursor-pointer`} key={index} data-aos="fade-up" data-aos-delay={index * 100}>
             <div className='w-[90%] h-[80%] relative' onClick={(e) => categoryhandle(index)}>
               <Image src={item.imageurl} fill alt="image" className='object-cover' />
             </div>

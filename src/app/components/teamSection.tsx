@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 import Aos from 'aos';
 import { useEffect } from 'react';
 
-
 const TeamSection = () => {
 
   useEffect(() => {
@@ -30,7 +29,7 @@ const TeamSection = () => {
             <div
               key={i}
               className="w-[90%] xl:w-[28%] lg:w-[30%] md:w-[45%] sm:w-[80%] h-[420px] py-6 flex flex-col items-center justify-start 
-                 bg-white shadow-xl rounded-2xl transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-200"  data-aos="fade-up" 
+                 bg-white shadow-xl rounded-2xl transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-300"  data-aos="fade-up" 
                  data-aos-delay={i * 150}
             >
               <div className="w-[180px] h-[180px] relative rounded-full overflow-hidden border-4 border-orange-200 shadow-md hover:shadow-lg transition duration-300">

@@ -142,6 +142,11 @@ export const corevalues = [
         'about':
           'Petra Oasis proudly operates with a team of 600 highly skilled employees, delivering expert manpower, electrical, and plumbing services for residential projects. From precision wiring to seamless plumbing installations and maintenance, our workforce ensures efficient, timely, and cost-effective',
       },
+        {
+            'image': '/images/experience.jpeg',
+            'title': 'Experience',
+            'about': 'Established in 2015, Petra Oasis has built a strong reputation in manpower supply, electrical work, and plumbing services across the UAE. Our experienced team has successfully completed numerous residential, commercial, and industrial projects with professionalism and quality.'
+        },
       {
         'image': '/images/house.png',
         'title': 'Worker Accommodation',
@@ -151,13 +156,9 @@ export const corevalues = [
         'image': '/images/bus.png',
         'title': 'Worker Transportation',
         'about': 'Petra Oasis ensures reliable transportation for all workers, providing safe and timely pick-up and drop-off services to project locations. This guarantees punctuality, reduces travel stress, and supports smooth project execution across sites.'
-      },
-    {
-        'image': '/images/experience.jpeg',
-        'title': 'Experience',
-        'about': 'Established in 2015, Petra Oasis has built a strong reputation in manpower supply, electrical work, and plumbing services across the UAE. Our experienced team has successfully completed numerous residential, commercial, and industrial projects with professionalism and quality.'
-    },
-    {
+      }
+      ,
+      {
         'image': '/images/safety.png',
         'title': 'Safety',
         'about': 'Safety is a key part of Petra Oasis culture. All manpower, electrical, and plumbing activities are performed following strict safety regulations. We ensure safe workplaces through proper training, supervision, and compliance with industry standards.'
@@ -389,7 +390,7 @@ export const ongoingProjects: CompanyProjects[] = [
     {"title":"SAQIR AL PETRA","caption":"PLASTER | TILES | PAINTS | CONT.","image":"/images/companylogo.png"},
     {"title":"PETRA OASIS","caption":"TECHNICAL CONTRACTING","image":"/images/companylogo.png"},
     {"title":"SAQIR AL PETRA","caption":"TECHNICAL SERVICES L.L.C","image":"/images/companylogo.png"},
-    {"title":"","caption":"PETRA FALCON TECHNICAL SERVICES L.L.C","image":"/images/companylogo.png"},
+    {"title":"PETRA FALCON","caption":"TECHNICAL SERVICES L.L.C","image":"/images/companylogo.png"},
     {"title":"SAQIR LIWA","caption":"ELECTROMECHANICAL WORKS L.L.C","image":"/logos/logos/saqir.jpeg"},
-    {"title":"","caption":"PETRA ELITE ELECTROMECHANICAL WORKS  L.L.C","image":"/images/companylogo.png"},
+    {"title":"PETRA ELITE ","caption":"ELECTROMECHANICAL WORKS  L.L.C","image":"/images/companylogo.png"},
     ]
