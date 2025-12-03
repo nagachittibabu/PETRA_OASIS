@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,14 +11,33 @@ interface ProjectCardProps {
 }
 
 const ProjectSectionCard: React.FC<ProjectCardProps> = ({ imageurl, title, description, video,index }) => {
+
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    const handleMouseEnter = () => {
+      if (videoRef.current) {
+        videoRef.current.play();
+      }
+    };
+  
+    const handleMouseLeave = () => {
+      if (videoRef.current) {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0; // reset to start if you want
+      }
+    };
+
+    
     return (
-        <div className={`${index%2===0 ? 'flex-row':'flex-row-reverse'} w-full h-[350px] flex sm:h-[400px] rounded-xl overflow-hidden shadow-xl  cursor-pointer hover:shadow-orange-200 projectCard`}>
+        <div className={`${index%2===0 ? 'flex-row':'flex-row-reverse'} w-full h-[350px] flex sm:h-[400px] rounded-xl overflow-hidden shadow-xl  cursor-pointer hover:shadow-orange-200 projectCard`} onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+  >
             <div className='xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-1/2 w-full  h-[90%] items-center flex justify-center '>
                 <div className='w-[90%] h-[80%] rouded-lg overdlow-hidden'>
             <video 
                 src={video} 
                 className="object-cover w-full h-full rounded-xl"
-                autoPlay
+                ref={videoRef}
                 loop
                 muted
             />

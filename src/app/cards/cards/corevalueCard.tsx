@@ -29,7 +29,7 @@ const CoreValueCard: React.FC<CoreValueCardProps> = ({ imageurl, title, descript
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={`relative w-full bg-white rounded-xl shadow-xl flex flex-col items-center justify-start text-center overflow-hidden cursor-pointer transform transition-all duration-500 ease-out 
-        hover:shadow-2xl hover:shadow-orange-200 ${isHovered ? 'h-[450px]' : 'h-[450px] xl:h-[450px] lg:h-[450px] md:h-[450px] sm:h-[500px]'} p-6 sm:p-8
+        hover:shadow-4xl hover:shadow-blue-300 ${isHovered ? 'h-[450px]' : 'h-[450px] xl:h-[450px] lg:h-[450px] md:h-[450px] sm:h-[500px]'} p-6 sm:p-8
       `}>
      
       {/* Title */}
