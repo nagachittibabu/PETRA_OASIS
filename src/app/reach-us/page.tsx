@@ -5,22 +5,30 @@ import 'aos/dist/aos.css';
 import  { useEffect, useState } from 'react'
 import ClientSection from '../components/clientSection';
 import Footer from '../components/footer';
+
 const categories = [
   {name:'Technicians',imageurl:'/images/technicians.jpg'},
   { name: "Plumbers", imageurl: "/images/electricalquoteimage.jpg" },
   { name: "Electricians", imageurl: "/images/mechanicalquoteimage.jpg" },
   { name: "Ductors", imageurl: "/images/ductingquoteimage.jpg" },
   { name: "Helpers", imageurl: "/images/helpersquoteimage.jpg" },
+
+  
 ]
+const subcontracts=[{ name: "Electrical Workers", imageurl: "/images/helpersquoteimage.jpg" },]
 
 const subCategories = [['Electrician','Plumber','Ductors','Helper'],["Plumber","Helper"],["Electrician","Helper"],["Ductors","Helper"],["Helpers"],]
+
+const supplycontracts =[['Electrician'],['Plumber'],['Ductors'],['Helper']]
 
 const ReachUspage = () => {
   const [categoryClick, setCategoryClick] = useState(false);
   const [clickedCategory,SetClickedCategory]=useState(0);
   const [quantities, setQuantities] = useState(Array(subCategories.length).fill(0));
   const [selectedItems, setSelectedItems] = useState<{ name: string; quantity: number }[]>([]);
-  const [getCodeSubmit,setGetCodeSubmit] =useState(false)
+  const [getCodeSubmit,setGetCodeSubmit] =useState(false);
+  const [mainCategorySelect,setMainCategorySelect]=useState("");
+  const [CategoryIntro,setCategoryIntro]=useState(true)
 
 
   useEffect(() => {
@@ -32,7 +40,7 @@ const ReachUspage = () => {
 
   const categoryhandle = (e:number) => {
     setCategoryClick(true);
-    SetClickedCategory(e)
+    SetClickedCategory(e);
   }
 
   const handleIncrement = (index: number) => {
@@ -87,16 +95,30 @@ const ReachUspage = () => {
 
 
   const filterSubCategories = subCategories.filter((item, index) => index === clickedCategory);
-
   
   return (
     <div className='w-full h-full flex items-center justify-center  flex-col space-y-4  border bg-orange-50'>
-      {!categoryClick && (
-      <div className='font-bold text-[22px] xl:text-[35px] lg:text-[32px] md:text-[28px] sm:text-[22px] slide-up py-4'>SELECT YOUR CATEGORY</div>
-      ) }
-      {!categoryClick && (
+      {CategoryIntro && (
+      <div className="w-full h-screen flex items-center justify-center gap-6" >
+        <div
+          className="w-[30%] text-center cursor-pointer p-6 bg-blue-200 text-xl font-bold rounded-lg shadow-md hover:bg-blue-400 transition"
+          onClick={() => {setMainCategorySelect('mep');setCategoryIntro(false)}}
+        >
+          MEP SUPPLY
+        </div>
+        <div
+          className="w-[30%] text-center cursor-pointer p-6 bg-orange-200 text-xl font-bold rounded-lg shadow-md hover:bg-orange-400 transition"
+          onClick={() => {setMainCategorySelect('supply');setCategoryIntro(false)}}
+        >
+          SUB CONTRACTS
+        </div>
+      </div>
+      )}
+      {!CategoryIntro && !categoryClick && (
       <div className='w-[95%] h-max   flex flex-wrap xl:gap-8 lg:gap-8 gap-10 items-center justify-center  rounded-lg shadow-lg bg-white py-10'>
-        {categories.map((item, index) => (
+        <div className='font-bold text-[22px] xl:text-[35px] lg:text-[32px] md:text-[28px] sm:text-[22px] slide-up py-4'>SELECT YOUR CATEGORY</div>
+        <div className="cursor-pointer text-[40px] text-blue-900 font-bold h-min absolute  top-40 left-20 " onClick={() => {setCategoryIntro(true);setCategoryClick(false)}} ><i className='bx bx-left-arrow-alt'></i></div>
+        {(mainCategorySelect==='mep' ? categories :subcontracts).map((item, index) => (
           <div className={`${index===0? 'w-[90%] xl:w-[80%] lg:w-[80%] md:w-[80%] sm:w-[80%]':'xl:w-[40%] lg:w-[32%] md:w-[44%] sm:w-[45%] w-[90%]'}  rounded-2xl shadow-lg border border-gray-200  h-[400px] flex items-center justify-center flex-col p-4 transform transition duration-300 hover:scale-102 hover:shadow-2xl  hover:shadow-blue-200 cursor-pointer`} key={index} data-aos="fade-up" data-aos-delay={index * 100}>
             <div className='w-[90%] h-[80%] relative' onClick={(e) => categoryhandle(index)}>
               <Image src={item.imageurl} fill alt="image" className='object-cover' />
@@ -105,17 +127,18 @@ const ReachUspage = () => {
           </div>
         ))}
       </div>
-      )}
+      )
+      }
       {categoryClick && !getCodeSubmit && (
         <div className='w-full h-max   z-10 bg-white slide-down flex justify-center items-center flex-col xl:flex-row lg:flex-row md:flex-row  sm:flex-col space-y-4 py-10'>
           <div className="cursor-pointer text-[40px] text-blue-900 h-min absolute  top-0 left-10 " onClick={() => {
             setCategoryClick(false); setSelectedItems([]); setSelectedItems([]);
-            setQuantities(Array(subCategories[clickedCategory].length).fill(0));
+            setQuantities(Array(subCategories[clickedCategory].length).fill(0));setCategoryIntro(true)
           }} ><i className='bx bx-left-arrow-alt'></i></div>
           <div className='w-[90%] xl:w-1/2 lg:w-[55%] md:w-[50%] sm:w-[80%] h-[500px]  flex items-center justify-center '>
             <div className='w-[90%] h-full  flex items-center justify-center rounded-lg shadow-xl  '>
               <ul className='w-[90%] h-[90%] overflow-scroll list-disc pl-1 '>
-                {filterSubCategories[0].map((item, index) => (
+                 {(mainCategorySelect==='mep'? filterSubCategories[0]:supplycontracts).map((item, index) => (
                   <li className='w-full h-[50px]  flex items-center justify-center gap-4' key={index}>
                     <h1 className='truncate font-medium text-gray-800 w-1/2'>{item}</h1>
                     <div className="w-1/3 flex items-center gap-2">

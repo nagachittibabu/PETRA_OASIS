@@ -29,7 +29,7 @@ const HomeCarousel = () => {
       <div className="w-full h-screen flex flex-col justify-center items-center text-center relative ">
         <div className="w-[220px] h-[220px] relative mb-6">
           <Image
-            src="/images/petra.jpeg"
+            src="/images/companylogo.png"
             alt="Company Logo"
             fill
             className="object-contain rounded-full border border-white/20 bg-white/10 shadow-[0_0_15px_rgba(255,255,255,0.8),0_0_30px_rgba(135,206,250,0.7),0_0_45px_rgba(255,165,0,0.6)] slide-down"
