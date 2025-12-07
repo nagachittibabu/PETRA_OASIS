@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Gallery from "../cards/cards/imageGallery";
 import ProjectDetailCard from "../cards/cards/projectDetailsCard";
 import LogoGallery from "../cards/cards/logoGallery";

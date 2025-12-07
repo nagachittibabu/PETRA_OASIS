@@ -61,6 +61,22 @@ export interface Service {
 }
 
 export const services: Service[] = [
+    {
+        "title": "Electrical",
+        "about": "High-level execution of power distribution and smart building systems.",
+        "video": "/videos/electricalVideo.mp4",
+        "points": [
+          "Electrical Engineering (Design & Product Selection) ",
+          "Installations of Electrical Panel Systems like MDBs,",
+          "Panels, SMDBs, DBs / Capacitor Banks",
+          "BMS Installation",
+          "Busbar System Installation",
+          "Cable Laying & Termination Works",
+          "Electrical Containment Systems",
+          "Low Current System & Low Voltage System",
+          "Power Distribution"
+        ]
+      },
         {
           "title": "Mechanical (Industrial Systems)",
           "about": "Expertise in heavy-duty mechanical systems for industrial and infrastructure projects.",
@@ -91,22 +107,6 @@ export const services: Service[] = [
               "Testing and Commissioning."
             ]
           },          
-        {
-          "title": "Electrical",
-          "about": "High-level execution of power distribution and smart building systems.",
-          "video": "/videos/electricalVideo.mp4",
-          "points": [
-            "Electrical Engineering (Design & Product Selection) ",
-            "Installations of Electrical Panel Systems like MDBs,",
-            "Panels, SMDBs, DBs / Capacitor Banks",
-            "BMS Installation",
-            "Busbar System Installation",
-            "Cable Laying & Termination Works",
-            "Electrical Containment Systems",
-            "Low Current System & Low Voltage System",
-            "Power Distribution"
-          ]
-        }
 ];
 
 export const ourpromises = [
