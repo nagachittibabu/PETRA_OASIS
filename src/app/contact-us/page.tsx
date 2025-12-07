@@ -1,5 +1,7 @@
 "use client";
 import Footer from "../components/footer";
+import toast from "react-hot-toast";
+
 
 const ContactPage = () => {
     return (
@@ -18,9 +20,45 @@ const ContactPage = () => {
                                 Submit Your Project Inquiry
                             </h3>
                         </div>
-                        <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <form
+              className="grid grid-cols-1 md:grid-cols-2 gap-6"
+              onSubmit={async (e) => {
+                e.preventDefault();
+                const form = e.target as HTMLFormElement;
 
-                            <div>
+                const formData = {
+                  name: (form as any).name.value,
+                  email: (form as any).email.value,
+                  company: (form as any).company.value,
+                  phone: (form as any).phone.value,
+                  message: (form as any).message.value,
+                };
+
+                const loadingToast = toast.loading("Sending your request...");
+
+                try {
+                  const res = await fetch("/api/contact-us", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(formData),
+                  });
+
+                  const data = await res.json();
+                  toast.dismiss(loadingToast);
+
+                  if (data.success) {
+                    toast.success(data.message || "Request sent successfully!");
+                    form.reset(); 
+                  } else {
+                    toast.error(data.message || "Failed to send request.");
+                  }
+                } catch (err) {
+                  toast.dismiss(loadingToast);
+                  toast.error("Something went wrong. Please try again.");
+                }
+              }}
+            >
+        <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-600 mb-2">Full Name</label>
                                 <input
                                     id="name"
@@ -84,7 +122,7 @@ const ContactPage = () => {
                                     <i className="bx bxs-location-plus text-blue-600 text-4xl"></i>
                                     <div>
                                         <h4 className="text-xl font-bold text-gray-900">Primary Office</h4>
-                                        <p className="text-sm text-gray-600">P.O BOX: 67411, Dubai - United Arab Emirates</p>
+                                        <p className="text-sm text-gray-600">P.O BOX:67411,Al Nabba,Sharjah-Dubai - U.A.E</p>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +131,7 @@ const ContactPage = () => {
                                     <i className="bx bxs-phone-call text-blue-600 text-4xl"></i>
                                     <div>
                                         <h4 className="text-xl font-bold text-gray-900">Give Us A Call</h4>
-                                        <a href="tel:+97165217424" className="text-sm text-gray-600 hover:text-blue-800 transition block">+971 6 521 7424</a>
+                                        <a href="tel:+971-509754442" className="text-sm text-gray-600 hover:text-blue-800 transition block">+971-509754442</a>
                                     </div>
                                 </div>
                             </div>
@@ -102,8 +140,8 @@ const ContactPage = () => {
                                     <i className="bx bxs-envelope text-blue-600 text-4xl"></i>
                                     <div>
                                         <h4 className="text-xl font-bold text-gray-900">Email Support</h4>
-                                        <a href="mailto:info@wahatsiwa.in" className="text-sm text-gray-600 hover:text-blue-800 block">info@wahatsiwa.in</a>
-                                        <a href="mailto:wahatliwantechllc@gmail.com" className="text-sm text-gray-600 hover:text-blue-800 block">wahatliwantechllc@gmail.com</a>
+                                        <a href="mailto:info@petraoasis.com" className="text-sm text-gray-600 hover:text-blue-800 block">info@petraoasis.com</a>
+                                        <a href="mailto:raju@petraoasis.com" className="text-sm text-gray-600 hover:text-blue-800 block">raju@petraoasis.com</a>
                                     </div>
                                 </div>
                             </div>

@@ -205,6 +205,7 @@ header {
     overflow: hidden;
     gap: 10;
     padding-top: 60px;
+    color: white !important;
   }
 
   .navbar li {
