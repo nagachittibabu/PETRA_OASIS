@@ -80,7 +80,7 @@ export const services: Service[] = [
         {
           "title": "Mechanical (Industrial Systems)",
           "about": "Expertise in heavy-duty mechanical systems for industrial and infrastructure projects.",
-          "video": "/videos/mechanicalVideo.mp4",
+          "video": "/videos/ductingVideo.mp4",
           "points": [
             "Heating, Ventilation & Air Conditioning (HVAC) System",
             "All type of Air Conditioning System (Centralized",
@@ -95,7 +95,7 @@ export const services: Service[] = [
         {
             "title": "Plumbing & Piping",
             "about": "Comprehensive solutions for building water supply, sanitary systems, and utility piping networks.",
-            "video": "/videos/ductingVideo.mp4",
+            "video": "/videos/mechanicalVideo.mp4",
             "points": [
               "Design & Installation of plumbing, drainage and  sanitary systems.",
               "Pump & Tank Installation",
@@ -182,26 +182,26 @@ export const projects = [
     },
     {
         'image': '/images/industrial.png',
-        'video': '/videos/industrialVideo.mp4',
+        'video': '/videos/industry.mp4',
         'title': 'Industrial',
         'about': 'Industrial properties cater to manufacturing, warehousing, and logistics needs Examples: factories, distribution centers, and industrial parks.'
     },
     {
         'image': '/images/educational.png',
-        'video': '/videos/schoolVideo.mp4',
+        'video': '/videos/educationalVideo.mp4',
         'title': 'Educational',
         'about': 'Educational properties serve learning institutions. Examples: schools, colleges, and universities.'
 
     },
     {
         'image': '/images/hospital.png',
-        'video': '/videos/hospitalityVideo.mp4',
+        'video': '/videos/hotel.mp4',
         'title': 'Hospitality',
         'about': 'Hospitality properties provide lodging, dining, and leisure services. Examples: hotels, restaurants, and resorts.'
     },
     {
         'image': '/images/medical.png',
-        'video': '/videos/hospitalVideo.mp4',
+        'video': '/videos/medical.mp4',
         'title': 'Medical',
         'about': 'Medical properties support healthcare services. Examples: hospitals, clinics, and medical office buildings.'
     }

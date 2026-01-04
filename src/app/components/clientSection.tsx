@@ -24,7 +24,7 @@ const ClientSection = () => {
                 src={ele}
                 alt={`client logo ${index}`}
                 fill
-                className="object-cover p-2"
+                className="object-contain"
               />
             </div>
           ))}

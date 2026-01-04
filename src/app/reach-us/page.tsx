@@ -19,7 +19,7 @@ const subcontracts=[{ name: "Electrical Workers", imageurl: "/images/helpersquot
 
 const subCategories = [['Electrician','Plumber','Ductors','Helper'],["Plumber","Helper"],["Electrician","Helper"],["Ductors","Helper"],["Helpers"],]
 
-const supplycontracts =[['Electrician'],['Plumber'],['Ductors'],['Helper']]
+const supplycontracts =[['Electrician']]
 
 const ReachUspage = () => {
   const [categoryClick, setCategoryClick] = useState(false);
@@ -97,17 +97,18 @@ const ReachUspage = () => {
   const filterSubCategories = subCategories.filter((item, index) => index === clickedCategory);
   
   return (
-    <div className='w-full h-full flex items-center justify-center  flex-col space-y-4  border bg-orange-50'>
+    <div className='w-full h-full flex items-center justify-center  flex-col space-y-4  border bg-transparent'>
       {CategoryIntro && (
-      <div className="w-full h-screen flex items-center justify-center gap-6" >
+      <div className="w-[95%] h-screen flex items-center justify-center gap-6 reach-us bg-transparent relative rounded-[50px] overflow-hidden" >
+        <div className="absolute w-full h-full inset-0 bg-black/50"></div>
         <div
-          className="w-[30%] text-center cursor-pointer p-6 bg-blue-200 text-xl font-bold rounded-lg shadow-md hover:bg-blue-400 transition"
+          className="w-[30%] text-center cursor-pointer p-6 bg-blue-200 text-xl font-bold rounded-lg shadow-md hover:bg-blue-400 transition slide-up"
           onClick={() => {setMainCategorySelect('mep');setCategoryIntro(false)}}
         >
           MEP SUPPLY
         </div>
         <div
-          className="w-[30%] text-center cursor-pointer p-6 bg-orange-200 text-xl font-bold rounded-lg shadow-md hover:bg-orange-400 transition"
+          className="w-[30%] text-center cursor-pointer p-6 bg-orange-200 text-xl font-bold rounded-lg shadow-md hover:bg-orange-400 transition slide-down"
           onClick={() => {setMainCategorySelect('supply');setCategoryIntro(false)}}
         >
           SUB CONTRACTS

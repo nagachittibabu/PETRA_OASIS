@@ -338,3 +338,13 @@ footer {
 .z-999 {
   z-index: 999 !important;
 }
+
+
+
+.reach-us{
+  background-image: url('/images/requestQuoteImg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
