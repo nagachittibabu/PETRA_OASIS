@@ -21,7 +21,7 @@ const HomeCarousel = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover carousel"
       >
-        <source src="/videos/homePageBanner.mp4" type="video/mp4" />
+        <source src="https://github.com/nagachittibabu/PETRA_OASIS/releases/download/v.1.0/homePageBanner.mp4" type="video/mp4" />
       </video>
 
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-800/70 to-orange-900/50 "></div>

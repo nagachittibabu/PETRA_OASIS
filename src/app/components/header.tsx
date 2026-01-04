@@ -171,7 +171,7 @@ const Header = () => {
                   className="relative z-10 text-sm font-semibold tracking-wide text-white"
                 >
                   REQUEST A QUOTE
-                </Link>
+                </Link> 
                 {/* subtle animated overlay */}
                 <span className="absolute inset-0 bg-blue-400 opacity-0 transition-opacity duration-300 group-hover:opacity-20"></span>
               </button>
