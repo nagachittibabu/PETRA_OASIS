@@ -62,7 +62,7 @@ export interface Service {
 
 export const services: Service[] = [
     {
-        "title": "Electrical",
+        "title": "Electrical service",
         "about": "High-level execution of power distribution and smart building systems.",
         "video": "/videos/electricalVideo.mp4",
         "points": [
