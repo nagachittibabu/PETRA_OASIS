@@ -1,6 +1,6 @@
 export const commitment = [
     {
-        "about1": "Quality Policy",
+        "about1": "Quality Policy for better growth",
         "para1": "MEP Enterprises is committed to meeting Customer Requirements through continual improvement of its Quality Management System.",
         "para2": "MEP shall sustain Organizational Excellence through visionary leadership and innovative efforts.",
         "about2": "Quality Assurance",
