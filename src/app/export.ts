@@ -1,6 +1,6 @@
 export const commitment = [
     {
-        "about1": "Quality Policy for better growth",
+        "about1": "Quality Policy",
         "para1": "MEP Enterprises is committed to meeting Customer Requirements through continual improvement of its Quality Management System.",
         "para2": "MEP shall sustain Organizational Excellence through visionary leadership and innovative efforts.",
         "about2": "Quality Assurance",
@@ -62,7 +62,7 @@ export interface Service {
 
 export const services: Service[] = [
     {
-        "title": "Electrical service",
+        "title": "Electrical",
         "about": "High-level execution of power distribution and smart building systems.",
         "video": "/videos/electricalVideo.mp4",
         "points": [
@@ -324,54 +324,115 @@ export const completedProjects: CompanyProjects[] = [
 ];
 
 export const ongoingProjects: CompanyProjects[] = [
-    {
-        company: "GRANADA EUROPE CONSTRUCTION LLC",
-        logo:"/ongoing-projects/GRANADA EUROPE CONSTRUCTION LLC/logo.png",
-        projects: [
-            { image: "/ongoing-projects/GRANADA EUROPE CONSTRUCTION LLC/img1.png", title: "AL MARYAH VISTA 1&2" },
-        ],
-    },
+ 
     {
         company: "VERGER DELPORTE U.A.E LTD",
         logo:"/ongoing-projects/VERGER DELPORTE U.A.E LTD/logo.png",
         projects: [
-            { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img1.jpg", title: "Sheikh Zayed Cricket Stadium" },
-            { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img2.png", title: "Palm Jumeirah Villa Project" },
+            { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img1.png", title: "Rashid Yachts & Marina Development Ocean Point" },
+            { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img2.png", title: "Rashid Yachts & Marina Development Clear Point" },
+            { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img3.png", title: "Khalifa University Student Accommodation" },
+             { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img4.PNG", title: "Damac Riverside" },
+             { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img5.png", title: "Reeman Phase 2 Project " },
+             { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img6.png", title: "Damac Lagoons - Malta Cluster – Phase 1 & 2" },
+             { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img7.png", title: "Monte Carlo – DAMAC Lagoos Master Devlopment " },
+             { image: "/ongoing-projects/VERGER DELPORTE U.A.E LTD/img8.png", title: "Mykonos – Damac Lagoos Master Devlopment" },
         ],
     },
-    {
-        company: "ABRAJ ELECTROMECHANICAL  WORK L.L.C",
-        logo:"/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/logo.webp",
-        projects: [
-            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img1.png", title: "E-167 villa @Emirates Hills" },
-            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img2.png", title: "P-47 @ Dubai Hills" },
-            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img3.png", title: "V004 villa @ Jumeirah Estate" },
-        ],
-    },
+ 
     {
         company: "SPECTRUM CUBE",
         logo:"/ongoing-projects/SPECTRUM CUBE/logo.png",
         projects: [
-            { image: "/ongoing-projects/SPECTRUM CUBE/img1.png", title: "Sharjah Oasis Mall" },
-            { image: "/ongoing-projects/SPECTRUM CUBE/img2.png", title: "Maryam Island Development" },
+            { image: "/ongoing-projects/SPECTRUM CUBE/img2.png", title: "Murjan Al Saadiyat Project , UAE." },
+            { image: "/ongoing-projects/SPECTRUM CUBE/img1.png", title: "Central Business District Phase-1" },
+             { image: "/ongoing-projects/SPECTRUM CUBE/sp3.jpeg", title: "AIRCRAFT HANGAR 1067 @ UUDS DWC AIRPORT PLOT NO. AC-F-15" },
         ],
     },
     {
         company: "MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C",
         logo:"/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/logo.png",
         projects: [
-            { image: "/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/img1.png", title: "AL Wasal-Qusaia." },
-            { image: "/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/img2.png", title: "AL Wasal-Qusaia." },
-            { image: "/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/img3.png", title: "AL Wasal-Qusaia." },
-            { image: "/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/img4.png", title: "AL Wasal-Qusaia." },
+           
+            { image: "/ongoing-projects/MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C/img3.png", title: "MAG 330 " },
+           
         ],
     },
     {
         company: "EMT ELECTROMECHNICAL WORKS L.L.C",
         logo:"/ongoing-projects/EMT ELECTROMECHNICAL WORKS L.L.C/logo.jpg",
         projects: [
-            { image: "/ongoing-projects/EMT ELECTROMECHNICAL WORKS L.L.C/img1.png", title: "2B+G+3 Floors+RF+TF On Plat No.2140909,Al Garhoud. Dubai, UAE." },
-            { image: "/ongoing-projects/EMT ELECTROMECHNICAL WORKS L.L.C/img2.png", title: "Jewel of the Creek, Dubai, UAE." },
+            { image: "/ongoing-projects/EMT ELECTROMECHNICAL WORKS L.L.C/img1.png", title: "ICONIC TOWER" },
+            { image: "/ongoing-projects/EMT ELECTROMECHNICAL WORKS L.L.C/img2.png", title: "SOUTH BAY RESIDENTIAL DISTRICT" },
+        ],
+    },
+    {
+        company: "Carawan Electrical & Mechanical Works LLC",
+        logo:"/ongoing-projects/CARWAN/logo.png",
+        projects: [
+            { image: "/ongoing-projects/CARWAN/img.png", title: " EXPO VALLEY VILLAS & TOWNHOUSES" },
+            { image: "/ongoing-projects/CARWAN/img2.png", title: "Mudon Central Park Phase 1,2 3 & 4" },
+             { image: "/ongoing-projects/CARWAN/img3.jpeg", title: "Athlon by Aldar Package 1, 2 & 3 (1,492 Villas)" },
+             { image: "/ongoing-projects/CARWAN/img4.jpeg", title: "The Acres Phase 1 & 2 (351 Villas)" },
+        ],
+    },
+    {
+        company: "Bright Accord General Contracting L.L.C",
+        logo:"/ongoing-projects/logo.png",
+        projects: [
+           
+            { image: "/ongoing-projects/img1.png", title: "P101 MLAD-2 - MANARAT LIVING ALDAR 2" },
+           
+        ],
+    },
+    {
+        company: "Afaq Engineering LLC",
+        logo:"/ongoing-projects/l2.png",
+        projects: [
+           
+            { image: "/ongoing-projects/a1.png", title: "R1081 Wasl Green Park – Rasal khor " },
+           
+        ],
+    },
+
+    {
+        company: "Professional Engineers Electro Mechanical Cont. Co. LLC",
+        logo:"/ongoing-projects/l1.png",
+        projects: [
+           
+            { image: "/ongoing-projects/p1.png", title: "Proposed 3 Residential buildings (G+2P floors)" },
+           
+        ],
+    },
+
+    {
+        company: "BK GULF LLC",
+        logo:"/ongoing-projects/bl1.png",
+        projects: [
+           
+            { image: "/ongoing-projects/b1.png", title: "Khazna Data Center. " },
+             { image: "/ongoing-projects/b2.png", title: "AI-optimized facility project (QAJ01) in Ajman " },
+           
+        ],
+    },
+    
+    {
+        company: "VYNAR MEP EXPERTISE CONTRACTING",
+        logo:"/ongoing-projects/vl1.jpeg",
+        projects: [
+           
+            { image: "/ongoing-projects/vmg.jpeg", title: "Downtown" },
+           
+        ],
+    },
+
+    {
+        company: "GRANADA EUROPE CONSTRUCTION LLC",
+        logo:"/ongoing-projects/GRANADA EUROPE CONSTRUCTION LLC/logo.png",
+        projects: [
+            { image: "/ongoing-projects/GRANADA EUROPE CONSTRUCTION LLC/img1.png", title: "Mercedes-Benz" },
+             { image: "/ongoing-projects/GRANADA EUROPE CONSTRUCTION LLC/img2.png", title: "Binghatti Hills" },
+            { image: "/ongoing-projects/GRANADA EUROPE CONSTRUCTION LLC/img3.png", title: "Ghost by Binghatti" },
         ],
     },
 
